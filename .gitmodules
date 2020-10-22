@@ -1,0 +1,6 @@
+[submodule "themes/gohugo-theme-ananke"]
+	path = themes/gohugo-theme-ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
+[submodule "themes/themes/tranquilpeak"]
+	path = themes/themes/tranquilpeak
+	url = https://github.com/kakawait/hugo-tranquilpeak-theme.git
