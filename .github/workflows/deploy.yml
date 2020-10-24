@@ -29,17 +29,16 @@ jobs:
         # docs: https://gohugo.io/hugo-pipes/minification/
         run: hugo --minify
         
-      - name: test
-        run: |
-          cd ./public
-          ls -al
+      # - name: test
+      #  run: |
+      #   cd ./public
+      #    ls -al
         
       - name: SFTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        #uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        uses: airvzxf/ftp-deployment-action@latest
         with:
-          ftp-server: ${{ secrets.FTP_SERVER }}
-          ftp-username: ${{ secrets.FTP_USER }}
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
-
-      - name: test
-        run: ls -al
+          server: ${{ secrets.FTP_SERVER }}
+          user: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local_dir: ./public
