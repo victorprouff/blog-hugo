@@ -17,3 +17,13 @@
     width: 80%;
     margin-top: 60px;
 }
+
+.page-top {
+    width: 80%;
+    position: fixed;
+    right: 0;
+    z-index: 3;
+    background-color: var(--bg-color);
+    height: 60px;
+    border-bottom: 1px solid var(--border-color);
+}
