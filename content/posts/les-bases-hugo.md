@@ -100,3 +100,51 @@ Ensuite il faut spécifier la surcharge dans le fichier config.toml
 customCss = ["css/style.css", "css/custom.css"]
 customJs = []
 ```
+
+## CI 
+
+Nous pouvons maintenant déployer notre site via Github.
+
+Créons un fichier deploy.yml
+
+```yml
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the main branch
+on:
+  push:
+    branches: main
+    
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+
+      - name: Update theme
+        # (Optional)If you have the theme added as submodule, you can pull it and use the most updated version
+        run: git clone https://github.com/victorprouff/anatole themes/anatole
+
+      - name: Setup hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+
+      - name: Build
+        # remove --minify tag if you do not need it
+        # docs: https://gohugo.io/hugo-pipes/minification/
+        run: hugo --minify
+        
+      - name: SFTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        with:
+          ftp-server: ${{ secrets.FTP_SERVER }}
+          ftp-username: ${{ secrets.FTP_USER }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: public/
+
+```

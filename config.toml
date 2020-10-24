@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://blog.victorprouff.fr"
 languageCode = "fr-fr"
 theme = "anatole"
 paginate = 7
