@@ -1,6 +1,10 @@
 ---
 title: "Transferts Pictures"
 date: 2020-10-24T19:06:48+02:00
+description: Petit projet de transfert de photo d'une carte SD à un répertoire spécifique avec trie par dates
+tags: [ "python", "photo" ]
+categories: [ "projet" ]
+series: ["Hugo"]
 draft: false
 ---
 
