@@ -1,7 +1,11 @@
 ---
-title: "Les Bases Hugo"
+title: Les Bases d'Hugo
 date: 2020-10-23T00:10:10+02:00
-draft: true
+description: Un petit article de rappel pour inialiser un site statique avec Hugo
+draft: false
+tags: [ "markdown", "css", "html", "themes", ]
+categories: [ "themes", "syntax"]
+series: ["Hugo"]
 ---
 
 ## Initialiser projet

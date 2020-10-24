@@ -1,0 +1,19 @@
+.sidebar {
+    width: 20%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-color: var(--bg-color);
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 4;
+    border-right: 1px solid var(--border-color);
+}
+
+.content {
+    height: auto;
+    float: right;
+    width: 80%;
+    margin-top: 60px;
+}
