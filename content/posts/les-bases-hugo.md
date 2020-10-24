@@ -137,7 +137,7 @@ jobs:
       - name: Build
         # remove --minify tag if you do not need it
         # docs: https://gohugo.io/hugo-pipes/minification/
-        run: hugo --minify
+        run: hugo --minify -d "public"
         
       - name: SFTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@3.1.1
@@ -146,5 +146,4 @@ jobs:
           ftp-username: ${{ secrets.FTP_USER }}
           ftp-password: ${{ secrets.FTP_PASSWORD }}
           local-dir: public/
-
 ```
