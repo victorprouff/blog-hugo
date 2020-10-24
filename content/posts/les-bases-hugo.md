@@ -30,6 +30,9 @@ git commit -m "Init project"
 hugo server
 ```
 
+Pour juste générer les fichiers il suffit d'entrer la commande : hugo
+Si on veut au passage minimifier les fichiers il suffit de rajouter : hugo --minify
+
 ## Ajouter un thème
 
 Choisir un [thème](https://themes.gohugo.io/) puis aller chercher son repos github.
