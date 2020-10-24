@@ -30,7 +30,10 @@ jobs:
         run: hugo --minify
         
       - name: test
-        run: cd ./public | ls -al | cd ..
+        run: |
+          cd ./public
+          ls -al
+          cd ..
         
       - name: SFTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@3.1.1
