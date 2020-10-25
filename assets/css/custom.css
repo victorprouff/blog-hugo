@@ -1,4 +1,4 @@
-/* .sidebar {
+.sidebar {
     width: 20%;
     -webkit-background-size: cover;
     background-size: cover;
@@ -26,4 +26,23 @@
     background-color: var(--bg-color);
     height: 60px;
     border-bottom: 1px solid var(--border-color);
-} */
+}
+
+@media screen and (max-width: 960px),
+print {
+    .sidebar {
+        width: 100%;
+        position: absolute;
+        border-right: none;
+        z-index: 1;
+    }
+    .content {
+        margin-top: 420px;
+        width: 100%;
+        z-index: 2;
+        position: absolute;
+    }
+    .page-top {
+        width: 100%;
+    }
+}
