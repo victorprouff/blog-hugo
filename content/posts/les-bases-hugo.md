@@ -150,7 +150,7 @@ draft: true
 Les "---" permettent de spécifier l'en-tête. A l'intérieur, on retrouve le titre, la date de création. Vous pouvez modifier les valeurs.
 Ensuite on trouve le paramètre `draf=true`. Ca vous allez le voir, c'est plutôt cool. Ca permet de dire à Hugo que l'on veut publier cet article. Si ce n'est pas le cas parce que nous sommes en train de travailler sur cet article vous pouvez mettre la valeur à false. Ainsi, il ne sera pas publier et donc non visiblement sur le site.
 
- Dans l'en-tête vous pouvez rajouter tout un tas de chose comme par exemple une description, des tags, des catégories etc..
+ Dans l'en-tête vous pouvez rajouter tout un tas de chose comme par exemple une description, des tags, des catégories etc.
 
 ```
 description: Un exemple de description
@@ -177,7 +177,7 @@ On obtient l'architecture suivante :
         └── custom.js
 ```
 
-Par exemple, j'ai voulu que la slidebar à gauche ne prenne que 20% de la largeur de l'écran. J'ai donc créé un fichier assets/css/custum.css dans lequel j'ai placé les classes css qui vont remplacer celles du style.css par défaut du thème. On surcharge le thème.
+Par exemple, j'ai voulu que la slidebar à gauche ne prenne que 20% de la largeur de l'écran. J'ai donc créé un fichier assets/css/custum.css dans lequel j'ai placé les classes CSS qui vont remplacer celles du style.css par défaut du thème. On surcharge le thème.
 
 ```css
 .sidebar {
@@ -209,32 +209,70 @@ Par exemple, j'ai voulu que la slidebar à gauche ne prenne que 20% de la largeu
     height: 60px;
     border-bottom: 1px solid var(--border-color);
 }
+
+@media screen and (max-width: 960px),
+print {
+    .sidebar {
+        width: 100%;
+        position: absolute;
+        border-right: none;
+        z-index: 1;
+    }
+    .content {
+        margin-top: 420px;
+        width: 100%;
+        z-index: 2;
+        position: absolute;
+    }
+    .page-top {
+        width: 100%;
+    }
+}
 ```
 
-Ensuite il faut spécifier la surcharge dans le fichier config.toml
+J'ai eu une petite surprise à ma première tentative : l'effet était nickel sauf quand je redimensionnais la page au format téléphone. Là, c'était le bordel ! Après quelques tests, j'ai compris qu'il fallait rajouter les classes du média `@media screen and (max-width: 960px)`. Vu que le code contenu dans custom.css surcharge le style par défaut APRES celui ci, il vient le remplacer et donc annuler l'effet du @media.
+
+Une fois votre modification ajouté, il faut spécifier la surcharge dans le fichier `config.toml`.
 
 ```  
 customCss = ["css/style.css", "css/custom.css"]
 customJs = []
 ```
 
-## CI 
+## Automatiser le déploiement avec une belle CI 
 
-Nous pouvons maintenant déployer notre site via Github.
+Bon là normalement, on en est à avoir un joli site qui nous va bien. C'est cool. Mais il est en local sur notre ordi. C'est pas dingo. Nous on veut que le monde (ou notre mamie) puisse admirer nos articles !
 
-Créons un fichier deploy.yml
+Alors là il y a deux méthodes. Soit on fait la commande `hugo` qui nous génère dans `/public` notre site statique qu'ensuite on le copie et on le colle sur le serveur soit à la main soit (un peu mieux) via FTP. C'est cool .. Mais c'est chiant.
+
+Soit on fait ça bien et on automatise.
+
+J'ai choisi d'héberger mon code sur Github. Gitlab fait la même chose donc aucun souci mais par contre, il me semble que la méthode est un peu différente. Donc la suite pourrait donc être à adapter selon la solution que vous avez choisi.
+
+L'idée est que Github et Gitlab ont mis en place gratuitement le déploiement continue. Ca en général les développeurs connaissent et aiment bien ça.
+Pour faire simple, on va pouvoir exécuter une ou plusieurs actions si un ou plusieurs événements survient.
+
+Dans notre cas nous allons lorsque l'on pousse une modification sur la branche main, lancer une VM avec la dernière version d'Ubuntu dessus, récupérer notre thème, installer hugo, builder et minifier le code, et enfin le déployer sur l'hébergement de notre choix via FTP. Autant d'action qui vont se faire automatiquement sans que l'on ait à intervenir.
+
+En gros on pousse une nouvelle version du code sur la branche main, on a 2 mins et notre site est mis à jour. Point. Je trouve ça puissant, pas vous ? :P 
+
+Pour commencer, dans Github, cliquez sur Actions puis `set up a workflow yourself`.
+
+![Github Actions](/img/github-actions.png)
+
+On nous propose alors de créer un fichier `.github/workflows/deploy.yml`. Le nom importe peu mais le chemin lui oui. A gauche on a le contenu du fichier et à droite les différents services que nous pouvons utiliser. C'est plutôt bien foutu, on peut faire une recherche et avoir la doc directement dans la page.
+
+![CI](/img/CI.png)
+
+Vous pouvez nommer le fichier comme vous voulez. A l'intérieur, j'ai rajouté le paramétrage de la CI :
 
 ```yml
-# This is a basic workflow to help you get started with Actions
-
 name: CI
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the main branch
 on:
   push:
     branches: main
-    
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -244,6 +282,8 @@ jobs:
 
       - name: Update theme
         # (Optional)If you have the theme added as submodule, you can pull it and use the most updated version
+        # J'ai choisi de faire un fork du thème que j'utilise. Ca me permet d'avoir une version stable et de choisir quand je fais la 
+        # mise à jour. Vous pouvez très bien mettre directement le repos de votre thème
         run: git clone https://github.com/victorprouff/anatole themes/anatole
 
       - name: Setup hugo
@@ -254,13 +294,32 @@ jobs:
       - name: Build
         # remove --minify tag if you do not need it
         # docs: https://gohugo.io/hugo-pipes/minification/
-        run: hugo --minify -d "public"
+        run: hugo --minify
         
       - name: SFTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        #uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        uses: airvzxf/ftp-deployment-action@latest
         with:
-          ftp-server: ${{ secrets.FTP_SERVER }}
-          ftp-username: ${{ secrets.FTP_USER }}
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: public/
+          server: ${{ secrets.FTP_SERVER }}
+          user: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local_dir: ./public
 ```
+
+Petite précision : Dans un précédent projet j'avais utilisé `SamKirkland/FTP-Deploy-Action@3.1.1` pour gérer l'envoie FTP. Je n'avais eu aucun problème. Quand j'ai voulu utiliser le même service avec le blog, impossible. La connexion se faisait bien mais il me copiait tout le répertoires de la racine SANS `public` et j'y ait passé une soirée complète. J'ai finit par tester un autre service à tout hasard, et ça a marché du premier coup... 
+
+Voila note à moi même, parfois essayer autre chose, bas c'est mieux.
+
+Une fois que vous avez modifié votre fichier, faite un commit. Dans Actions, vous devriez voir l'avancement de votre CI. Pouvez voir les détails de chaques étapes et en cas d'erreur c'est ici qu'elle s'affichera.
+
+Si tout ce passe bien, au bout d'une ou deux minutes vous pourrez constater à l'url de votre site qu'il a bien été déployé. Youpi :)
+
+## Conclusion
+
+Voila, on un site statique fonctionnel et un petit workflow qui va bien pour le déployer automatiquement.
+J'ai écrit cet article en apprenant moi même à me servir d'Hugo donc il y a surement des trous, des manques, des erreurs etc. N'hésitez pas à m'en faire par par mail en attendant les commentaires ;) Je pense que je mettrai à jour l'article en fonction de l'amélioration que je pourrai faire plus tard.
+
+Je pense aussi faire d'autres articles sur Hugo à l'avenir au fur et à mesure de mes recherches sur le sujet. Le principe des sites statiques me bottes bien et j'ai vraiment envie de creuser la question. Je pense notamment à la mise en place des commentaires mais également à la personnalisation plus poussé d'un thème. 
+L'outil a l'air très puissant et je n'ai fait qu'effleurer ces possibilités.
+
+Aller, des bisous
