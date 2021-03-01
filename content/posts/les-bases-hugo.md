@@ -34,8 +34,6 @@ sudo apt-get install hugo
 
 ## Création d'un projet
 
-Je vous laisse le soin d'aller lire la [documentation](https://gohugo.io/documentation/) très bien faite d'Hugo. L'installation est basique.
-
 Pour créer un projet il suffit d'entrer les commandes suivantes :
 
 ```
