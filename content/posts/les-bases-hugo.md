@@ -22,6 +22,16 @@ Le but de cet article est d'expliquer ma démarche dans la création de ce blog 
 
 Je vais détailler chaque commande que je fais à l'intension des plus néophytes. Si vous ne comprenait pas certaines commandes je vous recommande de vous renseigner sur Git ou de me laisser un commentaire (quand se sera possible :P).
 
+## Installation
+
+La [documentation](https://gohugo.io/documentation/) est très bien faite d'Hugo, je vous laisse la lire pour les détails.
+
+Installation sous linux :
+
+```
+sudo apt-get install hugo
+```
+
 ## Création d'un projet
 
 Je vous laisse le soin d'aller lire la [documentation](https://gohugo.io/documentation/) très bien faite d'Hugo. L'installation est basique.
