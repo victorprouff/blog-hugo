@@ -23,8 +23,7 @@ jobs:
       - name: Build
         # remove --minify tag if you do not need it
         # docs: https://gohugo.io/hugo-pipes/minification/
-        run: hugo --minify |
-          cp googlee3be102fb88798b0.html ./public/
+        run: hugo --minify ; cp googlee3be102fb88798b0.html ./public/
         
       - name: SFTP Deploy
         #uses: SamKirkland/FTP-Deploy-Action@3.1.1
