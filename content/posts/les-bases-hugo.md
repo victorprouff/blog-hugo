@@ -20,7 +20,7 @@ Pour mon blog j'ai adopté Hugo car assez populaire, léger et bien qu'un peu pl
 
 Le but de cet article est d'expliquer ma démarche dans la création de ce blog en fonction de mon besoin. Je vais expliquer également mon workflow de création.
 
-Je vais détailler chaque commande que je fais à l'intension des plus néophytes. Si vous ne comprenait pas certaines commandes je vous recommande de vous renseigner sur Git ou de me laisser un commentaire (quand se sera possible :P).
+Je vais détailler chaque commande que je fais à l’intention des plus néophytes. Si vous ne comprenait pas certaines commandes je vous recommande de vous renseigner sur Git ou de me laisser un commentaire (quand se sera possible :P).
 
 ## Installation
 
@@ -156,7 +156,7 @@ draft: true
 ```
 
 Les "---" permettent de spécifier l'en-tête. A l'intérieur, on retrouve le titre, la date de création. Vous pouvez modifier les valeurs.
-Ensuite on trouve le paramètre `draf=true`. Ca vous allez le voir, c'est plutôt cool. Ca permet de dire à Hugo que l'on veut publier cet article. Si ce n'est pas le cas parce que nous sommes en train de travailler sur cet article vous pouvez mettre la valeur à false. Ainsi, il ne sera pas publier et donc non visiblement sur le site.
+Ensuite on trouve le paramètre `draf=true`. Ça vous allez le voir, c'est plutôt cool. Ça permet de dire à Hugo que l'on veut publier cet article. Si ce n'est pas le cas parce que nous sommes en train de travailler sur cet article vous pouvez mettre la valeur à false. Ainsi, il ne sera pas publier et donc non visiblement sur le site.
 
  Dans l'en-tête vous pouvez rajouter tout un tas de chose comme par exemple une description, des tags, des catégories etc.
 
@@ -171,7 +171,7 @@ Ensuite en dehors de l'en-tête vous pouvez écrire votre article en markdown co
 
 ## Customiser le thème choisi
 
-Votre thème est chouette mais il ne vous plait pas complétement ? Vous souhaitez changer la couleur de fond, modifier la taille de la navbar ou du menu ? Rajouter du JS ? C'est possible en surchargeant le thème.
+Votre thème est chouette mais il ne vous plaît pas complètement ? Vous souhaitez changer la couleur de fond, modifier la taille de la navbar ou du menu ? Rajouter du JS ? C’est possible en surchargeant le thème.
 
 Afin de surcharger votre thème, rajoutez un répertoire assets à la racine du projet. A l'intérieur, placez le code que vous voulez remplacer.
 On obtient l'architecture suivante :
@@ -318,14 +318,14 @@ Petite précision : Dans un précédent projet j'avais utilisé `SamKirkland/FTP
 
 Voila note à moi même, parfois essayer autre chose, bas c'est mieux.
 
-Une fois que vous avez modifié votre fichier, faite un commit. Dans Actions, vous devriez voir l'avancement de votre CI. Pouvez voir les détails de chaques étapes et en cas d'erreur c'est ici qu'elle s'affichera.
+Une fois que vous avez modifié votre fichier, faite un commit. Dans Actions, vous devriez voir l'avancement de votre CI. Pouvez voir les détails de chaque étapes et en cas d'erreur c'est ici qu'elle s'affichera.
 
 Si tout ce passe bien, au bout d'une ou deux minutes vous pourrez constater à l'url de votre site qu'il a bien été déployé. Youpi :)
 
 ## Conclusion
 
 Voila, on un site statique fonctionnel et un petit workflow qui va bien pour le déployer automatiquement.
-J'ai écrit cet article en apprenant moi même à me servir d'Hugo donc il y a surement des trous, des manques, des erreurs etc. N'hésitez pas à m'en faire par par mail en attendant les commentaires ;) Je pense que je mettrai à jour l'article en fonction de l'amélioration que je pourrai faire plus tard.
+J'ai écrit cet article en apprenant moi même à me servir d'Hugo donc il y a sûrement des trous, des manques, des erreurs etc. N'hésitez pas à m'en faire par par mail en attendant les commentaires ;) Je pense que je mettrai à jour l'article en fonction de l'amélioration que je pourrai faire plus tard.
 
 Je pense aussi faire d'autres articles sur Hugo à l'avenir au fur et à mesure de mes recherches sur le sujet. Le principe des sites statiques me bottes bien et j'ai vraiment envie de creuser la question. Je pense notamment à la mise en place des commentaires mais également à la personnalisation plus poussé d'un thème. 
 L'outil a l'air très puissant et je n'ai fait qu'effleurer ces possibilités.
