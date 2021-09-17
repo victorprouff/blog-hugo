@@ -5,49 +5,57 @@ tags: [ "hugo" ]
 series: ["Hugo"]
 draft: false
 ---
+{{< load-photoswipe >}}
 
 
 
-# Test
-toto
-
-Sources :
+# Galeries d'images avec Hugo
+Un problème que j'avais avec Hugo c'était la gestion des images. Pour un blog classique aucun problème. C'est suffisant. Mais pour un site photo ou une galerie en ligne bof ..
+Mais en fait, j'avais juste mal lu la doc 😅 Bon faut dire que la doc sur le sujet est bon .. bref, y a pas grand chose. Mais disons que j'avais mal cherché.
+Je suis tombé sur plusieurs choses assez intéressantes :
 - https://github.com/liwenyip/hugo-easy-gallery
 - https://www.liwen.id.au/heg/#gallery-usage
 - https://www.xianmin.org/hugo-theme-jane/
 
+C'est encore perfectible mais ça commence à donner quelque chose de plutôt chouette et en creusant un peu ça pourrait me convenir tout à fait 😊 Je vais compléter cet article au fur et à mesure de mes recherches.
 
-<!-- {{< figure src="/img/CI.png" title="figure image with title" caption="figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption" >}} -->
+## Exemples
 
-Voluptate id adipisicing incididunt non. Est aliquip mollit est eu tempor ut nisi culpa dolore. Eu ipsum in do irure commodo ipsum ad do duis sit. Adipisicing culpa nisi qui reprehenderit ea minim commodo. 
-	
-{{< gallery hover-effect="slidedown" hover-transition="none" >}}
-  {{< figure src="/img/CI.png" >}}
-  {{< figure src="/img/github-actions.png" >}}
-{{< /gallery >}}
+> Note : J'ai été obligé de rajouter un espace entre les accolades des exemples suivant autrement ils auraient été interprété.
 
-<!-- {{< gallery hover-effect="grow" >}}
-  {{< figure src="/img/CI.png" >}}
-  {{< figure src="/img/github-actions.png" >}}
-{{< /gallery >}}
+A un endroit de la page il faut ajouter le shortcode suivant pour activer le mode gallerie :
+```
+{ {< load-photoswipe >} }
+```
 
-{{< gallery hover-effect="shrink" >}}
-  {{< figure src="/img/CI.png" >}}
-  {{< figure src="/img/github-actions.png" >}}
-{{< /gallery >}}
+Soit on déclare le répertoire qui contient les images
 
-{{< gallery hover-effect="slideup" >}}
-  {{< figure src="/img/CI.png" >}}
-  {{< figure src="/img/github-actions.png" >}}
-{{< /gallery >}}
+```
+{ {< gallery dir="images/galerie-images" thumb="-thumb" />} }
+```
+{{< gallery dir="images/galerie-images" thumb="-thumb" />}}
 
-{{< gallery hover-effect="slidedown" >}}
-  {{< figure src="/img/CI.png" >}}
-  {{< figure src="/img/github-actions.png" >}}
-{{< /gallery >}} -->
+Soit on déclare dans la galerie les images une par une
+```
+{ {< gallery >} }
+  { {< figure link="/images/galerie-images/img0.jpg" thumb="-thumb" >} }
+  { {< figure link="/images/galerie-images/img1.jpg" thumb="-thumb" >} }
+  { {< figure link="/images/galerie-images/img2.jpg" thumb="-thumb" >} }
+  { {< figure link="/images/galerie-images/img3.jpg" thumb="-thumb" >} }
+  { {< figure link="/images/galerie-images/img4.jpg" thumb="-thumb" >} }
+  { {< figure link="/images/galerie-images/img5.jpg" thumb="-thumb" >} }
+{ {< gallery />} }
+```
+
+{{< gallery >}}
+  {{< figure link="/images/galerie-images/img0.jpg" thumb="-thumb" >}}
+  {{< figure link="/images/galerie-images/img1.jpg" thumb="-thumb" >}}
+  {{< figure link="/images/galerie-images/img2.jpg" thumb="-thumb" >}}
+  {{< figure link="/images/galerie-images/img3.jpg" thumb="-thumb" >}}
+  {{< figure link="/images/galerie-images/img4.jpg" thumb="-thumb" >}}
+  {{< figure link="/images/galerie-images/img5.jpg" thumb="-thumb" >}}
+{{< gallery />}}
 
 
-{{< load-photoswipe >}}
 
-Sit enim occaecat eiusmod magna id dolore fugiat consequat ullamco amet. Aliqua qui laborum occaecat laborum incididunt anim in adipisicing enim.
 
