@@ -10,7 +10,7 @@ Grid Layout Styles
 .gallery {
     overflow: hidden;
     margin: 10px;
-    max-width: 768px;
+    max-width: 80%;  /* Default value : max-width: 768px;*/
 }
 .gallery .box {
     float: left;
@@ -59,6 +59,8 @@ figure styles
 figure {
     position:relative; /* purely to allow absolution positioning of figcaption */
     overflow: hidden;
+    margin-left: 20px;  /* Default value : margin-left: 20px; */
+    margin-right: 20px; /* Default value : margin-right: 20px; */
 }
 .gallery figure {
     position: absolute;
