@@ -1,13 +1,14 @@
 backend:
-  name: blog
-  repo: https://github.com/victorprouff/blog-hugo
+  name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
-media_folder: static/images
+publish_mode: editorial_workflow
+media_folder: content/img
 public_folder: /img
+
 collections:
-  - name: 'blog'
+  - name: 'hugo-blog'
     label: 'Blog'
-    folder: 'content/blog'
+    folder: 'content/posts'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
