@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
+  repo: https://github.com/victorprouff/blog-hugo
 publish_mode: editorial_workflow
 media_folder: content/img
 public_folder: /img
