@@ -1,0 +1,48 @@
+---
+title: "Découverte de Zsh"
+description: Présentation de Zsh et de ma configuration
+date: 2021-12-02T21:50:07+01:00
+tags: [ "zsh", "unix", "astuces" ]
+categories: [ "Astuces" ]
+draft: false
+---
+
+# Zsh
+
+>Je vais faire évoluer cet article en fonction de mes apprentissages et mon utilisation.
+
+"**Zsh** est un interpréteur de commandes ([shell](https://doc.ubuntu-fr.org/shell)), tout comme [bash](https://doc.ubuntu-fr.org/bash).
+Il fournit une interface entre l'utilisateur et le système."
+
+## Configuration
+
+```bash
+/etc/zsh/zshrc  ## Ce fichier s'applique à tous les utilisateurs du système
+~/.zshrc ## Ce fichier s'applique à un utilisateur du système (~ veut dire /home/utilisateur)
+```
+
+La commande `nano ~/.zshrc` permet de modifier le fichier.
+
+Après chaque modification il faut relancer le terminal ou lancer la commande `source ~/.zshrc`
+
+### Alias
+
+On peut définir des alias c'est à dire des commandes personnalisés à partir d'autres commandes. des alias à nos commandes dans le fichier de configuration.
+
+Pour cela il suffit de les rajouter à la fin du fichier `.zshrc` sous la forme `alias <nom-alias>="<commande>"`.
+
+La commande `alias` permet d'afficher la liste de tous les alias.
+
+Par exemple voici une liste d'alias que j'utilise :
+
+```bash
+alias zshconfig="nano ~/.zshrc" # ouvre le fichier .zshrc dans nano
+alias lzd="lazydocker" # ouvre le programme lazydocker
+alias myip="curl http://ipecho.net/plain; echo" # Retourne mon addess ip externe
+alias reload="source ~/.zshrc" # reload le fichier zshrc
+
+alias cd:client="cd /Users/monnom/Documents/Client" # se déplace dans le répertoire client
+alias cd:perso="cd /Users/monnom/Documents/Perso" # se déplace dans le répertoire Perso
+```
+
+Les alias peuvent sont extrêmement puissant et peuvent faire gagner énormément de temps.
