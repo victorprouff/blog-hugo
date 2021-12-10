@@ -1,0 +1,19 @@
+version: "3.0"
+
+services:
+  build:
+    image: bitnami/git
+    volumes:
+      - ./themes/:/themes
+    command: git clone https://github.com/victorprouff/anatole.git /themes/anatole
+
+  hugo:
+    image: pockost/hugo:0.69.0
+    volumes:
+      - ./:/src
+    user: "1000:1000"
+    command: serve --bind=0.0.0.0 -D
+    ports:
+      - 1313:1313
+    depends_on:
+      - build
