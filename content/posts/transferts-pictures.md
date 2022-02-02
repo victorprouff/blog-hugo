@@ -45,7 +45,7 @@ Etant développeur back, j'utilise au quotidien du C# .net... ça fait un peu so
 
 J'ai commencer par faire plusieurs tests pour comprendre le langage et tester individuellement les différentes briques de mon projet.
 
-Voila le résultat. Soyez indulgent, je maitrise par encore le langage ^^ D'ailleurs, si vous avez des sugestions ou remarques constructives, je suis preneur :)
+Voila le résultat. Soyez indulgent, je maitrise par encore le langage ^^ D'ailleurs, si vous avez des suggestions ou remarques constructives, je suis preneur :)
 
 Fichier `DeletePictures.py` :
 ```python
