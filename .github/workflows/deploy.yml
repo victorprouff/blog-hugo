@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Git checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@main
 
       - name: Update theme
         # (Optional)If you have the theme added as submodule, you can pull it and use the most updated version
