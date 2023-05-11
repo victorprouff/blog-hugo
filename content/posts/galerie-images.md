@@ -77,14 +77,16 @@ figure {
 }
 ```
 
+
 ## Exemples 
 
 ### Galerie seule
 
+```
 {{< gallery dir="/images/galerie-images" hover-effect="grow" caption-position="none" thumb="-thumb" />}}
-
+```
 ### Galerie avec figure
-
+```
 {{< gallery hover-effect="grow" caption-position="none" >}}
   {{< figure link="/images/galerie-images/img0.jpg" thumb="-thumb" caption="Mon image 1" >}}
   {{< figure link="/images/galerie-images/img1.jpg" thumb="-thumb" caption="Mon image 2" >}}
@@ -95,3 +97,4 @@ figure {
 {{< gallery />}}
 
 {{< load-photoswipe >}}
+```
