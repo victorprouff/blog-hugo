@@ -76,25 +76,3 @@ figure {
   margin-right: 20px; /* Default value : margin-right: 20px; */
 }
 ```
-
-
-## Exemples 
-
-### Galerie seule
-
-```
-{{< gallery dir="/images/galerie-images" hover-effect="grow" caption-position="none" thumb="-thumb" />}}
-```
-### Galerie avec figure
-```
-{{< gallery hover-effect="grow" caption-position="none" >}}
-  {{< figure link="/images/galerie-images/img0.jpg" thumb="-thumb" caption="Mon image 1" >}}
-  {{< figure link="/images/galerie-images/img1.jpg" thumb="-thumb" caption="Mon image 2" >}}
-  {{< figure link="/images/galerie-images/img2.jpg" thumb="-thumb" caption="Mon image 3" >}}
-  {{< figure link="/images/galerie-images/img3.jpg" thumb="-thumb" caption="Mon image 4" >}}
-  {{< figure link="/images/galerie-images/img4.jpg" thumb="-thumb" caption="Mon image 5" >}}
-  {{< figure link="/images/galerie-images/img5.jpg" thumb="-thumb" caption="Mon image 6" >}}
-{{< gallery />}}
-
-{{< load-photoswipe >}}
-```
