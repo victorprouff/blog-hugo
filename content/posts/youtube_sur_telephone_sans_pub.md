@@ -44,7 +44,7 @@ J’utilise Android et n’est pas testé sur un tel sous IOS. Je pense que ça 
 - Gestionnaire de modules
 - Rechercher et installer [ublock Origin](https://addons.mozilla.org/fr/firefox/addon/ublock-origin/)
 
-![Screenshot_20220202-200432.png](/img/youtube_sur_telephone_sans_pub/exemple_1.png)
+![exemple_1.jpg](/img/youtube_sur_telephone_sans_pub/exemple_1.jpg)
 
 ## Ajouter un raccourcis à Youtube sur la page d’accueil
 
@@ -52,4 +52,4 @@ J’utilise Android et n’est pas testé sur un tel sous IOS. Je pense que ça 
 - Nommer le raccourcis
 - Pis voila 🙂
 
-![Screenshot_20220202-200432.png](/img/youtube_sur_telephone_sans_pub/exemple_2.png)
+![exemple_2.jpg](/img/youtube_sur_telephone_sans_pub/exemple_2.jpg)
