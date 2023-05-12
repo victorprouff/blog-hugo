@@ -1,0 +1,52 @@
+{{ define "main" }}
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+    {{ range $paginator.Pages }}
+        <div class="post animated fadeInDown">
+            <div class="post-title">
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </h3>
+            </div>
+            <div class="post-content">
+                <div class="p_part"><p>{{ .Summary }}</p></div>
+
+                <div class="p_part"><p></p></div>
+            </div>
+            <div class="post-footer">
+                <div class="meta">
+                    <div class="info"><em class="fa fa-sun-o"></em><span
+                                class="date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+                        {{ with .Params.tags }}
+                            {{- range $index, $el := . -}}
+                                <a class="tag"
+                                   href="{{ ( printf "tags/%s/" ( . | urlize ) ) | relLangURL }}">{{ . }}</a>
+                            {{- end -}}
+                        {{ end }}
+                    </div>
+                    <div class="info">
+                        <!-- Start Affichage des commentaires giscus -->
+                        <script src="https://giscus.app/client.js"
+                            data-repo="victorprouff/site-hugo"
+                            data-repo-id="R_kgDOGde5QA"
+                            data-category="General"
+                            data-category-id="DIC_kwDOGde5QM4CWbAe"
+                            data-mapping="pathname"
+                            data-strict="0"
+                            data-reactions-enabled="1"
+                            data-emit-metadata="0"
+                            data-input-position="bottom"
+                            data-theme="preferred_color_scheme"
+                            data-lang="fr"
+                            data-loading="lazy"
+                            crossorigin="anonymous"
+                            async>
+                        </script>
+                        <!-- End Affichage des commentaires giscus -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{ end }}
+    <div class="pagination">
+        {{ template "_internal/pagination.html" . }}
+    </div>
+{{ end }}
