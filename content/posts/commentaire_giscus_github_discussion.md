@@ -7,7 +7,7 @@ series: ["Hugo"]
 draft: false
 ---
 
-![Kaamelott](/img/commentaire_giscus_github_discussion/kaamelott2.png)
+![Kaamelott](/img/commentaire_giscus_github_discussion/kaamelott.png)
 
 >Mais vous êtes pas mort espèce de connard ?!
 
@@ -39,7 +39,7 @@ Voila j'ai voulu tester et ça a été relativement simple à mettre en place. G
 
 Au final je l'ai glissé juste après la balise .Content du fichier single.html.
 
-![Exemple](/img/commentaire_giscus_github_discussion/exemple3.png)
+![Exemple](/img/commentaire_giscus_github_discussion/exemple.png)
 
 Pour rappel, avec hugo on peut surcharger un fichier du thème en le rajoutant dans le dossier layouts et en respectant le dossier. Ici `layouts/_default/single.html`.
 
