@@ -2,7 +2,6 @@
 title: "Vmmem Aime Trop La Ram"
 description: Résolution du problème de RAM de vmmem
 date: 2023-06-22T16:58:55+02:00
-draft: true
 tags: [ "windows" ]
 categories: [ "Astuces" ]
 draft: false
