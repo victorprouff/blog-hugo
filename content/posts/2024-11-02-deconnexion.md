@@ -6,8 +6,6 @@ draft: false
 categories: [ "Reflexion" ]
 ---
 
-# Déconnexion
-
 J'aime l'idée de la déconnexion. Ce n'est pas facile mais je trouve que ça me fait un bien fou. Se libérer des réseaux. Des obligations de réponse.
 
 Prendre du temps pour soi. Être seul physiquement et mentalement. Accepter cet état.
