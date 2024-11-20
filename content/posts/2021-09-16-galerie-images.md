@@ -3,7 +3,7 @@ title: "Galerie Images"
 date: 2021-09-16T22:02:31+02:00
 tags: [ "hugo" ]
 series: ["Hugo"]
-draft: false
+draft: true
 ---
 
 # Galeries d'images avec Hugo
