@@ -1,18 +1,19 @@
 baseURL = "https://blog.victorprouff.fr"
 languageCode = "fr-fr"
 theme = "anatole"
-paginate = 7
+paginate = 25
 canonifyurls = true
 DefaultContentLanguage = "fr"
+
 summarylength = 10
 enableEmoji = true
 enableRobotsTXT = true
 
-# Enable Disqus
-#disqusShortname = ""
-
 # Google Analytics
 #googleAnalytics = "UA-123-45"
+pygmentsUseClasses = true   
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
 
 ## Menu items
 [menu]
@@ -28,8 +29,8 @@ enableRobotsTXT = true
   identifier = "posts"
   url = "/posts/"
 
-#  [[menu.main]]
-#  name = "About"
-#  weight = 300
-#  identifier = "about"
-#  url = "/about/"
+  # [[menu.main]]
+  # name = "Boïte à outils"
+  # identifier = "tools"
+  # weight = 300
+  # url = "/tools/"
