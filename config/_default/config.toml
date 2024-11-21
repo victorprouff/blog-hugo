@@ -29,8 +29,8 @@ pygmentsCodefencesGuessSyntax = true
   identifier = "posts"
   url = "/posts/"
 
-  # [[menu.main]]
-  # name = "Boïte à outils"
-  # identifier = "tools"
-  # weight = 300
-  # url = "/tools/"
+  [[menu.main]]
+  name = "Boïte à outils"
+  identifier = "tools"
+  weight = 300
+  url = "/tools/"
