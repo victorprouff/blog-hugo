@@ -1,6 +1,7 @@
 ---
 title: "Télécharger des vidéos et sons depuis un site privé avec via youtube-dl et bash"
 description: "Télécharger des vidéos et des sons hébergé par Wistia grâce à yt-dlp et ffmpeg via un script bash"
+summary: "Télécharger des vidéos et des sons hébergé par Wistia grâce à yt-dlp et ffmpeg via un script bash"
 date: 2022-03-03T19:32:32+01:00
 tags: [ "bash", "outils", "youtube-dl", "Wistia", "Téléchargement" ]
 draft: false
@@ -42,11 +43,11 @@ En cherchant un peu j’ai trouvé une solution. Un peu chiante à automatiser p
 
 Donc quand sur la vidéo on clique droit sur la vidéo puis `Copier le lien et la vignette.`
 
-![Clique droit](/img/dl-videos-privee-avec-bash/cliquedroit.png)
+<img src="/img/dl-videos-privee-avec-bash/cliquedroit.png" alt="Clique droit" class="center">
 
 On récupère l’HTML récupéré pour chopper la clé à la fin de l’url juste après `wvideo=macle`
 
-![Lien Html](/img/dl-videos-privee-avec-bash/lienHtml.png)
+<img src="/img/dl-videos-privee-avec-bash/lienHtml.png" alt="Lien Html" class="center">
 
 Allez sur cette url en remplaçant les *** par la clé précédemment récupéré.
 
@@ -62,7 +63,7 @@ J’ai parlé que la formation contenait aussi des fichiers audios. Pour les ré
 
 `F12` sur la page qui contient le lancher audio, sur Firefox aller dans `Réseau` et cocher `Média` pour ne voir s’afficher que les sons et images. Rafraîchir la page s’il n’y a rien. Le fichier audio apparaît avec l’URL que l’on peut copier.
 
-![SonReseau](/img/dl-videos-privee-avec-bash/SonReseau.png)
+<img src="/img/dl-videos-privee-avec-bash/SonReseau.png" alt="SonReseau" class="center">
 
 ## Le script bash de téléchargement
 

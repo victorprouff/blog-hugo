@@ -1,6 +1,7 @@
 ---
 title: "Youtube sur telephone sans pub"
 description: Une petite astuce que j'utilise au quotidien pour regarder youtube sur mon téléphone sans publicité
+summary: Une petite astuce que j'utilise au quotidien pour regarder youtube sur mon téléphone sans publicité
 tags: [ "astuces" ]
 date: 2022-02-02T20:28:45+01:00
 draft: false
@@ -44,7 +45,7 @@ J’utilise Android et n’est pas testé sur un tel sous IOS. Je pense que ça 
 - Gestionnaire de modules
 - Rechercher et installer [ublock Origin](https://addons.mozilla.org/fr/firefox/addon/ublock-origin/)
 
-![exemple_1.jpg](/img/youtube_sur_telephone_sans_pub/exemple_1.jpg)
+<img src="/img/youtube_sur_telephone_sans_pub/exemple_1.jpg" alt="Youtube sur téléophone exemple 1" class="center">
 
 ## Ajouter un raccourcis à Youtube sur la page d’accueil
 
@@ -52,4 +53,4 @@ J’utilise Android et n’est pas testé sur un tel sous IOS. Je pense que ça 
 - Nommer le raccourcis
 - Pis voila 🙂
 
-![exemple_2.jpg](/img/youtube_sur_telephone_sans_pub/exemple_2.jpg)
+<img src="/img/youtube_sur_telephone_sans_pub/exemple_2.jpg" alt="Youtube sur téléophone exemple 2" class="center">

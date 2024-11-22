@@ -65,6 +65,30 @@ hugo gen chromastyles --style=monokai > syntax.css
 
 Liste de tous les styles : [lien](https://xyproto.github.io/splash/docs/all.html#abap)
 
+## Activer l'interprétation HTML dans les fichiers md
+
+Activer l'option en ajoutant le paramètre dans le fichier `config.toml`
+```toml
+[markup.goldmark.renderer]
+  unsafe = true # Allow HTML in md files
+```
+
+Permet d'utiliser des balises html dans les articles et pages .md.
+Comme centrer une image :
+```html
+<img src="/img/espanso/espanso-example.gif" alt="Exemple" class="center">
+```
+
+et rajouter la class dans le fichier `custom.css`.
+
+```css
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+```
+
 
 
 ## Sources :

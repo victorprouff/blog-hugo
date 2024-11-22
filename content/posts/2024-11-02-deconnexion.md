@@ -1,6 +1,7 @@
 ---
 title: "Déconnexion"
 description: "Réflexion sur la déconnexion à notre portable et l'utilisation d'une montre"
+summary: "Réflexion sur la déconnexion à notre portable et l'utilisation d'une montre"
 date: 2024-11-02T13:14:49+01:00
 draft: false
 categories: [ "Reflexion" ]

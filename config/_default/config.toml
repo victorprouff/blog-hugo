@@ -15,6 +15,9 @@ pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 
+[markup.goldmark.renderer]
+  unsafe = true # Allow HTML in md files
+
 ## Menu items
 [menu]
   [[menu.main]]

@@ -1,6 +1,7 @@
 ---
 title: "Se connecter en SSH à un serveur distant avec Visual Studio Code"
 description: Je partage une astuce pour se connecter via SSH à un serveur distant grâce à Visual Studio Code
+summary: Je partage une astuce pour se connecter via SSH à un serveur distant grâce à Visual Studio Code
 tags: [ "astuces", "vsc" ]
 series: ["Astuces"]
 date: 2021-05-05T19:33:31+02:00
@@ -15,13 +16,13 @@ Depuis peu je me suis remis à bricoler avec des Raspberry Pi pour plusieurs pet
 
 Mais j'ai découvert une extension VSC bien pratique pour se connecter en SSH à un serveur distant. Il s'agit de `Remote - SSH`.
 
-![Liste des connexions](/img/se-connecter-ssh-serveur-distant-vsc/ssh-vsc-list-connexion.png)
+<img src="/img/se-connecter-ssh-serveur-distant-vsc/ssh-vsc-list-connexion.png" alt="Liste des connexions" class="center">
 
 Une fois installé, on peut ajouter des connexions local ou distante. Il suffit de rentrer la ligne de commande `ssh user@addresse-serveur` puis rentrer le mot de passe et c'est good. On peut ensuite choisir un répertoire à ouvrir et là c'est comme si on développait à la maison, on voit tous les fichiers et dossiers du répertoire que l'on peut éditer, supprimer selon les droits du user.
 
 Mieux ! On peut ouvrir la console du serveur distant directement dans VSC. On peut donc exécuter directement les scripts que l'on écrit dans l'ide !
 
-![Présentation](/img/se-connecter-ssh-serveur-distant-vsc/ssh-vsc-presentation.png)
+<img src="/img/se-connecter-ssh-serveur-distant-vsc/ssh-vsc-presentation.png" alt="Présentation" class="center">
 
 Je m'en sers pour coder en python sur mon Raspberry pi, modifier les fichiers de config de mon serveur minecraft et voir les logs de celui ci ou encore se connecter au serveur qui héberge mon site : tout est possible 🙂
 

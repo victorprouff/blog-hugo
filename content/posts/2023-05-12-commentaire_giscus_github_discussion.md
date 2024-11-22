@@ -1,13 +1,16 @@
 ---
 title: "Des commentaires sur site static avec Giscus et Github Discussion"
 description: "Rajouter des commentaires sur un site en utilisant Github Discussion avec Giscus en moins de 30 mins"
+summary: "Rajouter des commentaires sur un site en utilisant Github Discussion avec Giscus en moins de 30 mins"
 date: 2023-05-12T13:08:58+02:00
 tags: [ "hugo", "outils" ]
 series: ["Hugo"]
 draft: false
 ---
 
-![Kaamelott](/img/commentaire_giscus_github_discussion/kaamelott.png)
+Coucou ! :D
+
+<img src="/img/commentaire_giscus_github_discussion/kaamelott.png" alt="Kaamelott" class="center">
 
 >Mais vous êtes pas mort espèce de connard ?!
 
@@ -39,8 +42,14 @@ Voila j'ai voulu tester et ça a été relativement simple à mettre en place. G
 
 Au final je l'ai glissé juste après la balise .Content du fichier single.html.
 
-![Exemple](/img/commentaire_giscus_github_discussion/exemple.png)
+<img src="/img/commentaire_giscus_github_discussion/exemple.png" alt="Exemple" class="center">
 
 Pour rappel, avec hugo on peut surcharger un fichier du thème en le rajoutant dans le dossier layouts et en respectant le dossier. Ici `layouts/_default/single.html`.
 
 Voila on peut officiellement me dire ce qu'on en pense en commentaire ! 😃
+
+## [Edit]
+
+Comme vous pouvez le constater, je n'utilise plus Discus. Je l'ai remplacé par GraphComment. Discus est très bien, j'aime beaucoup le coté indépendant du projet où les messages sont gérés dans une discussion sur Github mais le gros point noir est qu'il force à avoir un compte Github. J'ai préféré changé pour cette raison.
+
+Remarquez, cela que la migration s'est fait sans problème puisque je n'avais aucun commentaire xD c'était rapide :P
