@@ -323,6 +323,48 @@ Une fois que vous avez modifié votre fichier, faite un commit. Dans Actions, vo
 
 Si tout ce passe bien, au bout d'une ou deux minutes vous pourrez constater à l'url de votre site qu'il a bien été déployé. Youpi :)
 
+## Rajouter automatiquement un fichier .htaccess
+
+Un fichier `.htacess` est un fichier qui se mets à la racine de votre site et qui permet de paramétrer certains comportement de votre serveur web comme par exemple la redirection ou la mise en cache.
+
+Je vous laisse un petit [lien](https://leclerc-web.fr/fichier-htaccess/) pour vous permettre de creuser le sujet.
+
+Ce qui m'intéresse ici c'est que Hugo au moment de la génération du site, prenne en compte le fichier `.htaccess` pour le mettre dans le dossier `/public` pour le déployer.
+
+Pour ce faire un faut créer un fichier `index.htaccess` dans le dossier `layouts`. Dedans on met tout le contenu de notre fichier `.htaccess` :
+
+```
+ErrorDocument 404 {{ site.BaseURL }}404.html
+```
+
+Dans mon cas, je veux simplement paramétrer le fait que si un utilisateur tape n'importe quoi dans l'url et se perd il sera redirigé automatiquement vers la page 404.html. Notez l'utilisation de la balise `{{ site.BaseURL }}` qui permet d'utiliser les paramètres de la config hugo. La balise sera remplacé par l'url de mon site.
+
+Ensuite dans le fichier `config.toml`, il faut rajouter indiquer à hugo que l'on a un fichier que l'on aimerait ajouter à l'output :
+
+```yml
+[outputs]
+home = ["HTML", "htaccess"]
+
+## Definition du fichier à output
+[outputFormats]
+[outputFormats.htaccess]
+  baseName = ""
+  isPlainText = true
+  mediaType = "text/htaccess"
+
+# Permet de spécifier un type custom ici, htaccess
+[mediaTypes]
+  [mediaTypes."text/htaccess"]
+    suffixes = ["htaccess"]
+```
+
+Une fois que l'on a lancé notre commande `hugo` on voit apparaitre un fichier `.htaccess` dans le dossier `public`. Il contient bien notre redirection :
+```
+ErrorDocument 404 https://blog.victorprouff.fr/404.html
+```
+
+Voici la [doc](https://gohugobrasil.netlify.app/templates/output-formats/) hugo pour paramétrer l'output.
+
 ## Conclusion
 
 Voila, on un site statique fonctionnel et un petit workflow qui va bien pour le déployer automatiquement.

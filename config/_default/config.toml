@@ -181,3 +181,23 @@ url = "/index.xml"
 [[params.socialIcons]]
 name = "email"
 url = "mailto:contact@victorprouff.fr"
+
+# // config.toml
+[outputs]
+home = ["HTML", "htaccess", "humanstxt"]
+
+[outputFormats]
+[outputFormats.htaccess]
+    baseName = ""
+    isPlainText = true
+    mediaType = "text/htaccess"
+
+[outputFormats.humanstxt]
+    baseName = "humans"
+    isPlainText = true
+    mediaType = "text/plain"
+
+# Permet de spécifier un type custom ici, htaccess  
+[mediaTypes]
+  [mediaTypes."text/htaccess"]
+    suffixes = ["htaccess"]

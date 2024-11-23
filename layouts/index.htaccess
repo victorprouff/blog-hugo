@@ -1,0 +1,1 @@
+ErrorDocument 404 {{ site.BaseURL }}404.html
