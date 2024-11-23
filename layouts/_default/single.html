@@ -1,88 +1,55 @@
 {{ define "main" }}
-    <div class="post animated fadeInDown">
-        <div class="post-content">
-
-            <div class="post-title">
-                <h3>{{ .Title }}</h3>
-                {{ if eq .Type "post"}}
-                    <div class="info">
-                        <em class="fa fa-sun-o"></em>
-                        <span class="date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
-                        <em class="fa fa-clock-o"></em>
-                        <span class="reading-time">{{ i18n "reading_time" .ReadingTime }}</span>
-                    </div>
-                {{ end }}
-            </div>
-
-            {{ .Content }}
-            <!-- <div> -->
-                <!-- Start Affichage des commentaires giscus -->
-                <!-- <script src="https://giscus.app/client.js"
-                    data-repo="victorprouff/blog-hugo"
-                    data-repo-id="MDEwOlJlcG9zaXRvcnkzMDY0NzIzODE="
-                    data-category="General"
-                    data-category-id="DIC_kwDOEkRlvc4CWb6Z"
-                    data-mapping="pathname"
-                    data-strict="0"
-                    data-reactions-enabled="1"
-                    data-emit-metadata="0"
-                    data-input-position="top"
-                    data-theme="dark_dimmed"
-                    data-lang="fr"
-                    data-loading="lazy"
-                    crossorigin="anonymous"
-                    async>
-                </script> -->
-                <!-- End Affichage des commentaires giscus -->    
-            <!-- </div> -->
-            <div id="graphcomment"></div>
-            <script type="text/javascript">
-
-            /* - - - CONFIGURATION VARIABLES - - - */
-
-            var __semio__params = {
-                graphcommentId: "blogvictorprouff", // make sure the id is yours
-
-                behaviour: {
-                // HIGHLY RECOMMENDED
-                //  uid: "...", // uniq identifer for the comments thread on your page (ex: your page id)
-                },
-
-                // configure your variables here
-
-            }
-
-            /* - - - DON'T EDIT BELOW THIS LINE - - - */
-
-            function __semio__onload() {
-                __semio__gc_graphlogin(__semio__params)
-            }
-
-
-            (function() {
-                var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
-                gc.onload = __semio__onload; gc.defer = true; gc.src = 'https://integration.graphcomment.com/gc_graphlogin.js?' + Date.now();
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
-            })();
-            
-
-            </script>
-        </div>
-        <div class="post-footer">
-            <div class="info">
-                {{ with .Page.Params.Categories }}{{ partial "taxonomy/categories.html" . }}{{ end }}
-                {{ with .Page.Params.Tags }}{{ partial "taxonomy/tags.html" . }}{{ end }}
-            </div>
-        </div>
-
-        {{ if eq .Type "post"}}
-            {{ if .Site.DisqusShortname -}}
-                <div id="fb_comments_container">
-                    <h2>{{ i18n "comments" }}</h2>
-                    {{ template "_internal/disqus.html" . }}
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">{{ .Title }}</h1>
+                {{ $configDateFormat := .Site.Params.dateFormat | default ":date_medium" }}
+                {{ with .Date }}
+                {{ $ISO_time := dateFormat "2006-01-02T15:04:05-07:00" . }}
+                <div class="post-meta">
+                    <time datetime="{{ $ISO_time }}" itemprop="datePublished"> {{ . | time.Format $configDateFormat }} </time>
                 </div>
-            {{- end }}
-        {{ end }}
-    </div>
+                {{ end }}
+            </header>
+            {{ partial "toc.html" .}}
+            <div class="page-content">
+                {{ .Content }}
+            </div>
+        </article>
+        <!-- {{- partial "comments.html" . -}} -->
+        <div id="graphcomment"></div>
+        <script type="text/javascript">
 
+        /* - - - CONFIGURATION VARIABLES - - - */
+
+        var __semio__params = {
+            graphcommentId: "blogvictorprouff", // make sure the id is yours
+
+            behaviour: {
+            // HIGHLY RECOMMENDED
+            //  uid: "...", // uniq identifer for the comments thread on your page (ex: your page id)
+            },
+
+            // configure your variables here
+
+        }
+
+        /* - - - DON'T EDIT BELOW THIS LINE - - - */
+
+        function __semio__onload() {
+            __semio__gc_graphlogin(__semio__params)
+        }
+
+
+        (function() {
+            var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+            gc.onload = __semio__onload; gc.defer = true; gc.src = 'https://integration.graphcomment.com/gc_graphlogin.js?' + Date.now();
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+        })();
+        
+
+        </script>
+    </main>
+</div>
 {{ end }}
