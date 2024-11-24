@@ -1,12 +1,7 @@
-# baseURL = "https://blog.victorprouff.fr"
-# languageCode = "fr-fr"
-# theme = "hugo-blog-awesome"
-# # paginate = 25
-# pagination.pagerSize = 25
-# canonifyurls = true
-# DefaultContentLanguage = "fr"
 
-# summarylength = 10
+# pagination.pagerSize = 25
+
+summarylength = 10
 # enableEmoji = true
 # enableRobotsTXT = true
 
@@ -19,29 +14,6 @@
 # pygmentsUseClasses = true   
 # pygmentsCodeFences = true
 # pygmentsCodefencesGuessSyntax = true
-
-# [markup.goldmark.renderer]
-#   unsafe = true # Allow HTML in md files
-
-# ## Menu items
-# [menu]
-#   [[menu.main]]
-#   name = "Home"
-#   identifier = "home"
-#   weight = 100
-#   url = "/"
-
-#   [[menu.main]]
-#   name = "Posts"
-#   weight = 200
-#   identifier = "posts"
-#   url = "/posts/"
-
-#   [[menu.main]]
-#   name = "Boïte à outils"
-#   identifier = "tools"
-#   weight = 300
-#   url = "/tools/"
 
 title = "Victor Prouff blog"
 baseURL = "https://blog.victorprouff.fr"
@@ -88,7 +60,7 @@ theme = "hugo-blog-awesome"
   [markup.highlight]
     noClasses = false
   [markup.goldmark.renderer]
-    unsafe = true
+    unsafe = true # Allow HTML in md files
 	[markup.tableOfContents]
 		startLevel = 2 # ToC starts from H2
 		endLevel = 4 # ToC ends at H4
@@ -121,7 +93,7 @@ theme = "hugo-blog-awesome"
   #   weight = 30
   [[Languages.fr-fr.menu.main]]
     pageRef="tools"
-    name = "Boïte à outils"
+    name = "Boîte à outils"
     url = "/tools/"
     weight = 300
 
@@ -170,6 +142,7 @@ theme = "hugo-blog-awesome"
 [params.browserconfig]
   TileColor = "#2d89ef" # default windows 10 blue tile color
 
+###################### Social links
 [[params.socialIcons]]
 name = "github"
 url = "https://github.com/victorprouff"
@@ -182,7 +155,7 @@ url = "/index.xml"
 name = "email"
 url = "mailto:contact@victorprouff.fr"
 
-# // config.toml
+###################### Outputs
 [outputs]
 home = ["HTML", "htaccess", "humanstxt"]
 
