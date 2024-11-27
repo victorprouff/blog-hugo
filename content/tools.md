@@ -28,7 +28,7 @@ Rectangle est outil de redimensionnement de fenêtre sous MacOs. Même si Apple 
 
 ### [Maccy](https://maccy.app/)
 
-Maccy est un Clipboard Manager, un gestionnaire de copier-coller. Là où Windows gère nativement l'historique des copier-coller, sur MacOs ce n'est pas natif. Maccy est là pour nous sauver ! Il garde un historique, gère les fichiers, les multifichiers, entièrement paramétrable, je ne pourrais pas m'en passer.
+Maccy est un Clipboard Manager, un gestionnaire de copier-coller. Là où Windows gère nativement l'historique des copier-coller, sur MacOs ce n'est pas natif. Maccy est là pour nous sauver ! Il garde un historique, gère les fichiers, les multi-fichiers, entièrement paramétrable, je ne pourrais pas m'en passer.
 
 OpenSource et prix libre.
 
@@ -62,7 +62,8 @@ Il y a une offre gratuite tout à fait satisfaite qui propose 5 listes. Au-delà
 
 ### [Typora](https://typora.io/)
 
-Éditeur de texte markdown minimaliste multiplateforme. Simple, propre.
+Un éditeur de texte markdown minimaliste multiplateforme. Simple, propre.
+J'en ai fait un [article](https://blog.victorprouff.fr/posts/2024-11-27-Typora/) :)
 
 <img src="/img/Typora-example.jpeg" alt="Typora Example" class="center">
 
