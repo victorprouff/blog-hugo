@@ -3,8 +3,9 @@ title: "Des commentaires sur site static avec Giscus et Github Discussion"
 description: "Rajouter des commentaires sur un site en utilisant Github Discussion avec Giscus en moins de 30 mins"
 summary: "Rajouter des commentaires sur un site en utilisant Github Discussion avec Giscus en moins de 30 mins"
 date: 2023-05-12T13:08:58+02:00
+categories: ["Hugo"]
 tags: [ "hugo", "outils" ]
-series: ["Hugo"]
+# series: ["Hugo"]
 draft: false
 ---
 

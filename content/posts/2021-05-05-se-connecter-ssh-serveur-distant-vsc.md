@@ -2,8 +2,8 @@
 title: "Se connecter en SSH à un serveur distant avec Visual Studio Code"
 description: Je partage une astuce pour se connecter via SSH à un serveur distant grâce à Visual Studio Code
 summary: Je partage une astuce pour se connecter via SSH à un serveur distant grâce à Visual Studio Code
-tags: [ "astuces", "vsc" ]
-series: ["Astuces"]
+categories: ["Astuces"]
+tags: [ "Visual Studio Code" ]
 date: 2021-05-05T19:33:31+02:00
 draft: false
 ---

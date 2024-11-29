@@ -3,9 +3,9 @@ title: Les Bases d'Hugo
 date: 2020-10-23T00:10:10+02:00
 description: Un petit article de rappel pour inialiser un site statique avec Hugo
 summary: Un petit article de rappel pour inialiser un site statique avec Hugo
-tags: [ "hugo", "themes" ]
-categories: [ "themes" ]
-series: ["Hugo"]
+categories: [ "hugo" ]
+tags: [ "hugo" ]
+# series: ["Hugo"]
 draft: false
 ---
 

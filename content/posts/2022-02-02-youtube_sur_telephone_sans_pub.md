@@ -2,8 +2,9 @@
 title: "Youtube sur telephone sans pub"
 description: Une petite astuce que j'utilise au quotidien pour regarder youtube sur mon téléphone sans publicité
 summary: Une petite astuce que j'utilise au quotidien pour regarder youtube sur mon téléphone sans publicité
-tags: [ "astuces" ]
 date: 2022-02-02T20:28:45+01:00
+categories: [ "Astuces" ]
+tags: ["Youtube", "Publicité"]
 draft: false
 ---
 

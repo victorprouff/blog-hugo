@@ -3,6 +3,7 @@ title: "Télécharger des vidéos et sons depuis un site privé avec via youtube
 description: "Télécharger des vidéos et des sons hébergé par Wistia grâce à yt-dlp et ffmpeg via un script bash"
 summary: "Télécharger des vidéos et des sons hébergé par Wistia grâce à yt-dlp et ffmpeg via un script bash"
 date: 2022-03-03T19:32:32+01:00
+categories: ["Astuces"]
 tags: [ "bash", "outils", "youtube-dl", "Wistia", "Téléchargement" ]
 draft: false
 ---
