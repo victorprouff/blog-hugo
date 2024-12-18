@@ -15,6 +15,7 @@ Une autre réflexion que j'ai est que le matériel nécessaire pour programmer e
 
 En développement, le coût le plus important c'est le temps. Le temps d'apprendre une compétence et le temps de réaliser le projet. Cela peut être très long mais finalement, à part le coût initial de notre machine (qui peut tenir plusieurs années, n'est pas dépendante à un projet en particulier et peut servir pour de nombreuses choses en dehors de la programmation), il n'y a que l'hébergement qui ne représente au mieux que quelques euros par mois.
 
+![Superpouvoir](/img/SuperDeveloper.jpeg)
 Aujourd'hui j'ai créé un blog personnel (que vous lisez actuellement, bienvenue, installez-vous, prenez un thé 😊), mon [site photo](https://photographie.victorprouff.fr), la [galerie de peinture](https://peinture.michelprouff.fr) de mon père, plus plusieurs autres projets plus ou moins avancés, tous héberger au même endroit, chez [Infomaniak](https://www.infomaniak.com/fr). Cela me coûte une dizaine d'euros par mois, ce qui comprend en plus, plusieurs noms de domaines, plusieurs adresses mails, 2To de drive et plusieurs autres services. Le code source de mes projets, ainsi que la CI/CD est gratuitement sur Github. Bref, le coût est dérisoire.
 
 Si le coût est dérisoire et si notre limite n'est que temporelle alors avec du temps, nos possibilités sont infinies. Et je trouve ça merveilleux.
