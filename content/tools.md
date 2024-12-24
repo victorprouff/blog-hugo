@@ -8,17 +8,14 @@ draft: false
 
 Depuis que j'ai un ordi dans les mains j'ai accumulé quelques outils qui me sont bien pratiques au quotidien. Souvent je m'en sers absolument tous les jours et me fais gagner du temps et de la charge mentale. Je me suis dit que les partager ici, dans une page dédié, pourrait être une bonne idée et que si un autre moi tombait dessus il serait bien content d'en avoir une liste.
 
+## Services Web
+
+- [FreshRss](https://freshrss.org/) : Outil indispensable à ma veille, je l'ai auto-hébergé sur un serveur à la maison via Coolify.
+- [Bitwarden](https://bitwarden.com/fr-fr/pricing/) : Mon gestionnaire de mots de passe.
+- [Mealie](https://mealie.io/) : Mon livre de recettes de cuisine en ligne, auto-hébergé sur un serveur à la maison via Coolify.
+- Mails et hébergements, [Infomaniak](https://www.infomaniak.com/fr) : Mon hébergeur favoris depuis quelques années, j'ai plusieurs boites mails et un drive chez eux aussi. Entreprise Suisse, transparente, respectueuse de la vie privé et qui essaie de faire les choses biens d'un point de vue écologique.
+
 ## MacOs
-
-### [Espanso](https://espanso.org/)
-
-C'est véritablement ma dernière trouvaille. Je l'avais noté dans un doc et oublié sans jamais l'avoir testé jusqu'à hier. Le principe est simple, tu tapes une clé par exemple **!poc** et il le remplace automatiquement par la valeur associé **Prouff Of Concept**. C'est super puissant, il y a plein d'options et il gère les dates et peut même exclure des logiciels ou changer de comportement selon l'app utilisée.
-
-<img src="/img/espanso-example.gif" alt="Espanso Example" class="center">
-
-Je m'en sers pour sauvegarder des infos non sensibles (on va éviter les mots de passes faut pas déconner) mais utile que je n'ai pas envie de taper ou de me souvenir : Siret, numéro de tel, mail, adresse, etc... Le tout paramétrable dans un simple fichier de configuration donc facilement sauvegardable.
-
-C'est OpenSource, disponible sur MacOs, Linux et Windows. Écris en Rust. Cet outil est merveilleux.
 
 ### [Rectangle](https://github.com/rxhanson/Rectangle)
 
@@ -45,6 +42,16 @@ C'est avec CleanShot que j'ai enregistré le gif pour la démo d'Espanso, ça ne
 Il coûte 29$ en achat unique mais vu les services qu'il me rend, je n'ai pas hésité une seconde.
 
 ## Multi OS
+
+### [Espanso](https://espanso.org/)
+
+C'est véritablement ma dernière trouvaille. Je l'avais noté dans un doc et oublié sans jamais l'avoir testé jusqu'à hier. Le principe est simple, tu tapes une clé par exemple **!poc** et il le remplace automatiquement par la valeur associé **Prouff Of Concept**. C'est super puissant, il y a plein d'options et il gère les dates et peut même exclure des logiciels ou changer de comportement selon l'app utilisée.
+
+<img src="/img/espanso-example.gif" alt="Espanso Example" class="center">
+
+Je m'en sers pour sauvegarder des infos non sensibles (on va éviter les mots de passes faut pas déconner) mais utile que je n'ai pas envie de taper ou de me souvenir : SIRET, numéro de tel, mail, adresse, etc... Le tout paramétrable dans un simple fichier de configuration donc facilement sauvegardable.
+
+C'est OpenSource, disponible sur MacOs, Linux et Windows. Écris en Rust. Cet outil est merveilleux.
 
 ### [RustDesk](https://rustdesk.com/fr/)
 
