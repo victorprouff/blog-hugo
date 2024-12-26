@@ -1,5 +1,5 @@
 ---
-title: "Plante et Introversion"
+title: "Plantes et Introversion"
 description: ""
 summary: ""
 date: 2024-12-18T07:53:35+01:00
