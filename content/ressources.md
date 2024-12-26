@@ -17,7 +17,7 @@ draft: false
 - [Sylvqin](https://www.youtube.com/@Sylvqin) : Histoire du Web.
 - [Monsieur Bidouille](https://www.youtube.com/@monsieurbidouille) : Vulgarisation sur le fonctionnement technique du monde, énergie, réseau SNCF, Electricité, DIY... C'est vaste, pointu et passionnant.
 
-## Blog et site internet
+## Blogs et sites internet
 
 - [Next](https://next.ink/) : Site d'actualité numérique, indépendant et sans publicité ni sponsoring qui vit grâce à l'abonnement des lecteurs.
 - [Korben](https://korben.info/) : Dinosaure du web. Korben partage à travers ces nombreux articles des outils et astuces.
@@ -26,7 +26,7 @@ draft: false
 - [Ploum](https://ploum.net/) : Auteur et développeur, ces articles nous invite à nous intéresser aux logiciels libres, à la sobriété et la simplicité.
 - [JeSuisUnDev](https://www.jesuisundev.com/) : L'un des meilleurs blogs pour les développeurs selon moi. Malheureusement un calme en ce moment, son auteur propose beaucoup d'articles motivants et inspirant pour les développeurs en étant agnostique des technologies. N'hésitez pas à lire des articles parfois anciens, pour moi ils sont intemporels.
 
-## Podcast
+## Podcasts
 
 - [Underscore_](https://open.spotify.com/show/1sz1NhoHqbpXbzNlpOnFoz?si=068746984bab4661) : Version audio du talk-show tech du même nom disponible sur Youtube et Twitch.
 - [Numériques essentiels 2030](https://open.spotify.com/show/7t9MOjGJg6sqY3yxzk4tYs?si=8b85d68edea74866) : Ça de comment faire pour avoir un numérique différent en accord avec le contexte écologique actuel.
