@@ -86,11 +86,11 @@ theme = "hugo-blog-awesome"
     name = 'Articles'
     url = '/posts/'
     weight = 20
-  # [[Languages.fr-fr.menu.main]]
-  #   pageRef="about"
-  #   name = 'À propos'
-  #   url = '/about/'
-  #   weight = 30
+  [[Languages.fr-fr.menu.main]]
+    pageRef="ressources"
+    name = 'Ressources'
+    url = '/ressources/'
+    weight = 30
   [[Languages.fr-fr.menu.main]]
     pageRef="tools"
     name = "Boîte à outils"
