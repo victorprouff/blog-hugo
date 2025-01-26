@@ -17,9 +17,10 @@ jobs:
         run: git clone https://github.com/victorprouff/hugo-blog-awesome themes/hugo-blog-awesome
 
       - name: Setup hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3.0.0
         with:
-          hugo-version: 'latest'
+          hugo-version: 0.139.3
+          extended: true
         
       - name: Build
         # remove --minify tag if you do not need it
