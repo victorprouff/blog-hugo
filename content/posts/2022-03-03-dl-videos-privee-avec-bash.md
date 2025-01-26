@@ -32,7 +32,7 @@ Si on décompose :
 - `L’URL` de la vidéo à télécharger (ici une vidéo sur Youtube)
 - et enfin `-o suivi d’une URL` pour préciser où enregistrer la vidéo. On note les guillemets et le %(title)s.%(ext)s qui permet de récupérer le titre et l’extension de la vidéo original. Il y a pleins d’options possible.
 
-![cliquedroit](/img/dl-videos-privee-avec-bash/execute.png)
+<img src="/img/dl-videos-privee-avec-bash/execute.png" alt="cliquedroit" class="center">
 
 C’est tout. C’est basique je vous dis !
 
@@ -118,6 +118,6 @@ convertToMp4 "Module5"
 
 On remarque dans mon script que la formation que j’ai récupéré est découpé en module. J’ai réussi à rendre le code un peu plus concis que le premier (que j’ai volontairement tronqué) même si c’est sûrement améliorable. On boucle sur chaque fichier `.bin` de chaque répertoires. Le traitement peut-être un peu long (j’avais des vidéos de plusieurs dizaines de minutes), il faut être patient.
 
-Et voila ! N’hésitez pas à tester yt-dlp, un outil bien pratique ! le le garde dans un coin de ma boite à outils numérique.
+Et voila ! N’hésitez pas à tester **yt-dlp**, un outil bien pratique ! le le garde dans un coin de ma boite à outils numérique.
 
 A plus, bisous et codez bien !
