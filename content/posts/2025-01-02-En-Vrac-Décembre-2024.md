@@ -11,11 +11,10 @@ J'ai décidé de partager mensuellement mes découvertes que ça soit des lectur
 
 Je vais publier un En vrac par mois et je ne pense pas me restreindre à la tech même si je pense qu'elle sera prédominante.
 
-## Youtube
-
+## 🎞️ Youtube
 - **[Micode] [La première cyberarme de l'histoire](https://www.youtube.com/watch?v=gXtp6C-3JKo)**
 - **[Micode] [L'attaque informatique la plus sophistiquée de l'Histoire](https://www.youtube.com/watch?v=WQBLPYToLME&list=LL&index=112)**
-- **[Defend Intelligence] [J’ai construit un drone tueur dans ma chambre](https://www.youtube.com/watch?v=J-93IHyGWAQ&list=LL&index=65) **- Ça fait un peu flipper de savoir ce qu'il est possible de faire aujourd'hui avec des drones et de l'IA.
+- **[Defend Intelligence] [J’ai construit un drone tueur dans ma chambre](https://www.youtube.com/watch?v=J-93IHyGWAQ&list=LL&index=65)** - Ça fait un peu flipper de savoir ce qu'il est possible de faire aujourd'hui avec des drones et de l'IA.
 - **[Philoxime] [Nous n'irons pas sur Mars. Voici pourquoi ](https://www.youtube.com/watch?v=N8G-KGqn2Lg&t=0s)**- Réflexion intéressante sur la réalité d'un tel voyage et de pourquoi c'est complètement con de vouloir "coloniser" Mars
 - **[Le Fossoyeur de Films] [Voilà pourquoi HOUSE OF THE DRAGON est une série "chiante"](https://www.youtube.com/watch?v=dFYPuYSGf3k&list=LL&index=37)** - Ça parle de plan et de composition, de transmettre beaucoup sans qu'il y ait de grosses scènes d'action
 - **[Nico DT] [Peut-on encore parler de culture sur Youtube ?](https://www.youtube.com/watch?v=7daRDijn5Qg&list=LL&index=72)**
@@ -23,8 +22,7 @@ Je vais publier un En vrac par mois et je ne pense pas me restreindre à la tech
 - **[DATAGUEULE] [Banques de compensation : la Nature à crédit](https://www.youtube.com/watch?v=Zym5_Zlk_38&list=LL&index=81)**
 - **[STUPID ECONOMICS] 2050 : [LE FUTUR DU TRANSPORT ?](https://www.youtube.com/watch?v=L9hRXI-g_xM&list=LL&index=89)**- Une série de documentaires vraiment intéressant sur notre vie possible en 2050 d'un point de vue économique avec les enjeux climatiques que l'on rencontre aujourd'hui.
 
-## Tools
-
+## 🛠️ Tools
 - **Bananas** - Le partage d'écran en P2P gratuit et sécurisé : Pas testé mais je me le note pour pouvoir le retrouver au besoin. Le projet a l'air super intéressant comme alternative libre et smart aux solutions classiques. Idéal, je pense, pour des formations.
   - [Article original chez Korben](https://korben.info/bananas-partage-ecran-p2p-gratuit-securise.html)
   - [Code Source](https://github.com/mistweaverco/bananas)
@@ -39,8 +37,7 @@ Je vais publier un En vrac par mois et je ne pense pas me restreindre à la tech
 - **[Eventuallycoding] [Migration vers Coolify](https://eventuallycoding.com/2024/10/coolify-feedback)** - J'ai découvert Coolify grâce à cet article et ceux qui ont suivi. Je l'ai depuis installé sur un serveur à la maison et il m'a permis de déployer simplement plusieurs services dont, mon lecteur de flux RSS FreshRss, mon livre de cuisine en ligne Mealie, un serveur Minecraft et des expérimentations en .net.
   - [Coolify](https://coolify.io/)
 
-## Articles
-
+## 📖 Articles
 - **[Next] [Les dessous de la modération des réseau sociaux et de l'IA](https://next.ink/162933/plus-de-140-moderateurs-kenyans-de-facebook-victimes-de-troubles-de-stress-post-traumatique/)** - Plus de 140 modérateurs kényans de Facebook victimes de troubles de stress post-traumatique
 - **[Next] [Musk s’attaque encore à Wikipédia, et appelle à cesser les dons à la fondation Wikimédia](https://next.ink/163224/musk-sattaque-encore-a-wikipedia-et-appelle-a-cesser-les-dons-a-la-fondation-wikimedia/)**
 - **[Next] [La Russie teste son « internet souverain »](https://next.ink/161549/la-russie-teste-son-internet-souverain/)**
