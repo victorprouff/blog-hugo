@@ -13,7 +13,7 @@ Après, à l'époque je vivais dans une maison avec un relativement grand jardin
 
 Aujourd'hui, bien que j'aime beaucoup mon appartement, il est en ville avec très peu de vert autour. Je me suis donc attelé sans vraiment y réfléchir à avoir des plantes chez moi. Au début, ça n'a pas été une grande réussite. Le taux de perte était élevé. Mais au fur et à mesure du temps, j'ai appris à m'en occuper, à lire dans leur comportement leur besoin, à trouver le rythme d'arrosage, de bouture et de rempotage. Il faut dire que mon salon est particulièrement bien exposé avec deux fenêtres donnant plein sud qui m'illumine la pièce une grosse partie de la journée. Les plantes s'y sentent plutôt bien et j'ai pu assister à plusieurs sauvetages de plante à moitié décédée que ma sœur m'a rapportée et qui aujourd'hui ne sont pas loin de m'envahir tellement elles se sentent bien. Coucou Madame Fougère.
 
-![Madame Fougère](/img/plante-introversion-1-Moyenne.jpeg)
+<img src="/img/plante-introversion-1-Moyenne.jpeg" alt="Madame Fougère" class="center">
 
 Ça habille vraiment une pièce des plantes. Ça la rend plus chaleureuse. Plus cocooning. Ça a grandement participé à rendre mon appartement vraiment agréable. Même si elles ne bougent pas, même si elles ne parlent pas, ça amène de la vie chez soi. Ça amène du vert.
 
