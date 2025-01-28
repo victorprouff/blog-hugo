@@ -148,6 +148,10 @@ name = "github"
 url = "https://github.com/victorprouff"
 
 [[params.socialIcons]]
+name = "mastodon"
+url = "https://mastodon.social/@victorprouff"
+
+[[params.socialIcons]]
 name = "Rss"
 url = "/index.xml"
 
