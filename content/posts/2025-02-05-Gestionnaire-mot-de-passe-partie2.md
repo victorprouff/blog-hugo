@@ -14,14 +14,14 @@ draft: false
 
 ## Pourquoi Bitwarden
 
-Il existe beaucoup de gestionnaires de mot de passe. Mais je ne confierais pas mes mots de passe à n'importe quel acteur, ce sont des données extrêmement sensibles qui protègent la totalité de ma vie numérique. Beaucoup pourraient même argumenter que ce n'est pas souhaitable de confier ces données à une entreprise. Je préfère personnellement choisir la bonne entreprise en utilisant des critères sévères car gérer moi-même mes mots de passe abaisserait drastiquement ma sécurité en plus de créer un stress lié à sa gestion et un risque de perte.
+Il existe beaucoup de gestionnaires de mot de passe. Mais je ne confierais pas mes mots de passe à n'importe quel acteur, ce sont des **données extrêmement sensibles** qui protègent la totalité de ma vie numérique. Beaucoup pourraient même argumenter que ce n'est pas souhaitable de confier ces données à une entreprise. Je préfère personnellement choisir la bonne entreprise en utilisant des critères sévères car gérer moi-même mes mots de passe abaisserait drastiquement ma sécurité en plus de créer un stress lié à sa gestion et un risque de perte.
 
 Bitwarden coche tous mes critères :
 
-- Open Source : La base de code de Bitwarden est open source est accessible librement à tout un chacun qui souhaiterait comprendre le code, l'auditer ou proposer une correction ou amélioration. C'est pour moi un gage de confiance et de sécurité. Des chercheurs en cybersécurité peuvent chercher des failles et les remonter. Elles sont ainsi rapidement corrigées.
-- La version gratuite est très complète. Contrairement à beaucoup d'autres gestionnaires, la version gratuite permet d'avoir une sécurité complète sur tous nos appareils. Il n'y a pas de limite.
-- La version payante est très abordable : à 10€ l’année je pense que c'est l'un des moins cher. Il rajoute quelques petites options. Personnellement je l'ai prise plus pour soutenir le travail des développeurs que pour en avoir un véritable usage.
-- Hébergeable : Oui, si l'on veut gérer soi-même Bitwarden sur son propre serveur, c'est complètement possible. Cela permet d'avoir la sécurité d'un outil fiable et solide avec en plus la certitude que les données sont chez nous. Par contre, il faut gérer les accès, les back-up et tout le tralala. Cet article ne s'adresse pas vraiment à cette catégorie d'utilisateur plus expérimenté donc je ne m'étendrais pas là-dessus.
+- **Open Source** : La base de code de Bitwarden est open source est accessible librement à tout un chacun qui souhaiterait comprendre le code, l'auditer ou proposer une correction ou amélioration. C'est pour moi un gage de confiance et de sécurité. Des chercheurs en cybersécurité peuvent chercher des failles et les remonter. Elles sont ainsi rapidement corrigées.
+- La version **gratuite est très complète**. Contrairement à beaucoup d'autres gestionnaires, la version gratuite permet d'avoir une sécurité complète sur tous nos appareils. Il n'y a pas de limite.
+- La version **payante est très abordable** : à 10€ l’année je pense que c'est l'un des moins cher. Il rajoute quelques petites options. Personnellement je l'ai prise plus pour soutenir le travail des développeurs que pour en avoir un véritable usage.
+- **Hébergeable** : Oui, si l'on veut gérer soi-même Bitwarden sur son propre serveur, c'est complètement possible. Cela permet d'avoir la sécurité d'un outil fiable et solide avec en plus la certitude que les données sont chez nous. Par contre, il faut gérer les accès, les back-up et tout le tralala. Cet article ne s'adresse pas vraiment à cette catégorie d'utilisateur plus expérimenté donc je ne m'étendrais pas là-dessus.
 
 ## Installation
 
@@ -38,7 +38,7 @@ Vous devriez retrouver l'extension en haut de votre navigateur (ici sur Firefox)
 
 Cliquez dessus et connectez-vous.
 
-Vous devriez arriver dans votre coffre-fort. Ici vous trouverez listé tous les sites pour lesquels vous avez enregistré un ou plusieurs mots de passe (1). Vous pouvez en rechercher un (2). Notez que Bitwarden détecte l'URL sur lequel vous vous trouvez et si celle-ci match avec une URL d'un mot de passe présent dans votre coffre, il la met en première (3).
+Vous devriez arriver dans votre **coffre-fort**. Ici vous trouverez listé tous les sites pour lesquels vous avez enregistré un ou plusieurs mots de passe (1). Vous pouvez en rechercher un (2). Notez que Bitwarden détecte l'URL sur lequel vous vous trouvez et si celle-ci match avec une URL d'un mot de passe présent dans votre coffre, il la met en première (3).
 
 <img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden2.png" alt="Bitwarden" style="zoom:50%;" class="center" />
 
@@ -109,7 +109,7 @@ Cliquez sur `Enregistrer` et ça y est, félicitation, vous avez créé votre pr
 
 Bon, c'est un peu long et on peut faire plus simple avec la saisie automatiquement !
 
-### **Automatique**
+### Automatique
 
 Ce cas est très pratique lorsque vous vous créez un nouveau compte sur un site internet. Allez sur le site en question et remplissez simplement les champs demandés.
 
@@ -171,7 +171,7 @@ Vous retrouvez la liste des suggestions pour ce site et vous pouvez remplir l'id
 
 Vous pouvez également rechercher un identifiant spécifique dans la barre de recherche.
 
-## **Modification**
+## Modification
 
 La manipulation pour modifier un mot de passe est sensiblement la même que pour enregistrer un mot de passe. Elle peut changer d'un site mais la logique globale reste la même. Je vais prendre l'exemple d'un changement de mot de passe sur Facebook.
 
@@ -199,7 +199,7 @@ N'oubliez pas d'enregistrer !
 
 Et c'est tout bon :)
 
-## **Import/Export**
+## Import/Export
 
 Avant de vous laisser, je voudrais vous montrer comment exporter et importer votre coffre. En effet, l'idée n'étant pas de vous enfermer, il vous est tout à fait possible de changer de crémerie en changeant de gestionnaire de mot de passe.
 
@@ -225,7 +225,7 @@ Cliquez sur `Exporter le coffre`.
 
 Encore une fois, faite très attention à comment vous stockez et transmettez ce fichier. Détruisez-le, une fois qu'il n'est plus utile après un import par exemple.
 
-#### **Import**
+#### Import
 
 Ici vous pourrez ajouter, supprimer ou modifier vos dossiers, importer des mots de passe ou bien exporter votre coffre. Allez dans `Importer des données`.
 
@@ -235,7 +235,7 @@ Vous pouvez choisir un dossier spécifique. Choisissez le format de fichier en f
 
 Et voilou ! :)
 
-## **Conseils**
+## Conseils
 
 Je vous conseille d'y aller petit à petit. Ajoutez vos mots de passe au fur et à mesure de votre navigation internet sans les modifier. Prenez le temps d'appréhender l'outil. Au bout de quelques jours à quelques semaines vous devriez être relativement habitués et rassuré quant à l'utilisation du gestionnaire. À ce moment-là, commencez à remplacer les mots de passe des sites critiques comme vos adresses mails. Puis vous pourrez étendre aux restes. Chaque modification de vos anciens mots de passe vous sécurisera un peu plus.
 
