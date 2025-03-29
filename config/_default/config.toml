@@ -82,10 +82,27 @@ theme = "hugo-blog-awesome"
     url = '/'
     weight = 10
   [[Languages.fr-fr.menu.main]]
+    pageRef="/en-vracs/"
+    name = 'En Vracs'
+    url = '/en-vracs/'
+    weight = 20
+  [[Languages.fr-fr.menu.main]]
     pageRef="posts"
     name = 'Articles'
     url = '/posts/'
-    weight = 20
+    weight = 21
+
+  # [[Languages.fr-fr.menu.main]]
+  #   pageRef="tags"
+  #   name = 'Tags'
+  #   url = '/tags/'
+  #   weight = 22
+
+  # [[Languages.fr-fr.menu.main]]
+  #   pageRef="categories"
+  #   name = 'Categories'
+  #   url = '/categories/'
+  #   weight = 22
   [[Languages.fr-fr.menu.main]]
     pageRef="ressources"
     name = 'Ressources'
