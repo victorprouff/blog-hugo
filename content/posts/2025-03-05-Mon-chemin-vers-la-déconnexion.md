@@ -4,6 +4,7 @@ description: "J'ai à nouveau envie de déconnexion en ce moment. De me couper d
 summary: "J'ai à nouveau envie de déconnexion en ce moment. De me couper du bruit incessant des réseaux sociaux. De ne plus perdre du temps à scroller à l'infini. Mais là tâche est rude parce que l'addiction est forte."
 date: 2025-03-05T08:02:52+01:00
 categories: [ "Astuces", "Reflexion"  ]
+tags: ["déconnexion" ]
 draft: false
 ---
 

@@ -5,6 +5,7 @@ summary: "Réflexion sur la déconnexion à notre portable et l'utilisation d'un
 date: 2024-11-02T13:14:49+01:00
 draft: false
 categories: [ "Reflexion" ]
+tags: ["déconnexion" ]
 ---
 
 J'aime l'idée de la déconnexion. Ce n'est pas facile mais je trouve que ça me fait un bien fou. Se libérer des réseaux. Des obligations de réponse.
