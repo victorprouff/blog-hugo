@@ -267,11 +267,11 @@ En gros on pousse une nouvelle version du code sur la branche main, on a 2 mins 
 
 Pour commencer, dans Github, cliquez sur Actions puis `set up a workflow yourself`.
 
-<img src="/img/les-bases-hugo/github-actions.png" alt="Github Actions" class="center">
+<img src="/img/les-bases-hugo/github-actions.webp" alt="Github Actions" class="center">
 
 On nous propose alors de créer un fichier `.github/workflows/deploy.yml`. Le nom importe peu mais le chemin lui oui. A gauche on a le contenu du fichier et à droite les différents services que nous pouvons utiliser. C'est plutôt bien foutu, on peut faire une recherche et avoir la doc directement dans la page.
 
-<img src="/img/les-bases-hugo/CI.png" alt="CI" class="center">
+<img src="/img/les-bases-hugo/CI.webp" alt="CI" class="center">
 
 Vous pouvez nommer le fichier comme vous voulez. A l'intérieur, j'ai rajouté le paramétrage de la CI :
 

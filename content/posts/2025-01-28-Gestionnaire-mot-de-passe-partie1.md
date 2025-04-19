@@ -1,5 +1,5 @@
 ---
-title: "Gestionnaire mot de passe - Partie 1 - Présentation"
+title: "Gestionnaire de mot de passe - Partie 1 - Présentation"
 description: "🔒 Vos mots de passe sont-ils vraiment sécurisés ? 🔒
 On a tous des dizaines (voire des centaines) de comptes en ligne, mais comment bien les protéger sans se prendre la tête ? Cet article vous explique pourquoi des mots de passe uniques et complexes sont essentiels, comment les pirates les craquent, et surtout, quelle solution simple et efficace adopter pour ne plus jamais en oublier un seul. 🚀 Ne laissez pas votre sécurité au hasard, découvrez le gestionnaire de mots de passe qui va changer votre quotidien ! 🔑💡"
 summary: "🔒 Vos mots de passe sont-ils vraiment sécurisés ? 🔒
@@ -60,7 +60,7 @@ On voit donc bien l'intérêt de la complexité d'un mot de passe.
 
 Je suis tombé sur cette infographie assez explicite sur le site [francenum.gouv.fr](https://www.francenum.gouv.fr/magazine-du-numerique/combien-de-temps-un-pirate-met-il-pour-trouver-votre-mot-de-passe-comment).
 
-<img src="/img/gestionnaireMotDePasse1.jpeg" alt="Temps pour casser des mots de passe" style="zoom:70%;" class="center" />
+<img src="/img/2025-01-28-Gestionnaire-mot-de-passe-partie1/gestionnaireMotDePasse1.webp" alt="Temps pour casser des mots de passe" style="zoom:70%;" class="center" />
 
 Il faut tenir compte de l'évolution rapide des technologies de déchiffrement et prendre une marge. Ainsi une longueur de **14 ou 15 caractères** pour un mot de passe incluant lettre minuscule/majuscules, nombres et caractères spéciaux **est une bonne base**.
 
@@ -108,7 +108,7 @@ Eh bien parce qu'il **ne faut pas sous-estimer les techniques de craquage de dem
 
 En parlant de fuite de données, allez faire un tour sur le site [haveibeenpwned](https://haveibeenpwned.com/). Ce site permet de vérifier si votre adresse mail (et donc potentiellement le ou les mots de passe associé aux comptes piratés) s'est retrouvée dans une fuite de données. Bien pratique pour lister les sites où il serait bien de changer de mot de passe.
 
-<img src="/img/gestionnaireMotDePasse2.jpeg" alt="haveibeenpwned" style="zoom:70%;" class="center" />
+<img src="/img/2025-01-28-Gestionnaire-mot-de-passe-partie1/gestionnaireMotDePasse2.webp" alt="haveibeenpwned" style="zoom:70%;" class="center" />
 
 Pour mon exemple, je sais que deux de mes adresses mails se sont retrouvés dans 7 fuites.
 

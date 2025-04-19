@@ -32,7 +32,7 @@ Si on décompose :
 - `L’URL` de la vidéo à télécharger (ici une vidéo sur Youtube)
 - et enfin `-o suivi d’une URL` pour préciser où enregistrer la vidéo. On note les guillemets et le %(title)s.%(ext)s qui permet de récupérer le titre et l’extension de la vidéo original. Il y a pleins d’options possible.
 
-<img src="/img/dl-videos-privee-avec-bash/execute.png" alt="cliquedroit" class="center">
+<img src="/img/dl-videos-privee-avec-bash/execute.webp" alt="cliquedroit" class="center">
 
 C’est tout. C’est basique je vous dis !
 
@@ -44,11 +44,11 @@ En cherchant un peu j’ai trouvé une solution. Un peu chiante à automatiser p
 
 Donc quand sur la vidéo on clique droit sur la vidéo puis `Copier le lien et la vignette.`
 
-<img src="/img/dl-videos-privee-avec-bash/cliquedroit.png" alt="Clique droit" class="center">
+<img src="/img/dl-videos-privee-avec-bash/cliquedroit.webp" alt="Clique droit" class="center">
 
 On récupère l’HTML récupéré pour chopper la clé à la fin de l’url juste après `wvideo=macle`
 
-<img src="/img/dl-videos-privee-avec-bash/lienHtml.png" alt="Lien Html" class="center">
+<img src="/img/dl-videos-privee-avec-bash/lienHtml.webp" alt="Lien Html" class="center">
 
 Allez sur cette url en remplaçant les *** par la clé précédemment récupéré.
 
@@ -64,7 +64,7 @@ J’ai parlé que la formation contenait aussi des fichiers audios. Pour les ré
 
 `F12` sur la page qui contient le lancher audio, sur Firefox aller dans `Réseau` et cocher `Média` pour ne voir s’afficher que les sons et images. Rafraîchir la page s’il n’y a rien. Le fichier audio apparaît avec l’URL que l’on peut copier.
 
-<img src="/img/dl-videos-privee-avec-bash/SonReseau.png" alt="SonReseau" class="center">
+<img src="/img/dl-videos-privee-avec-bash/SonReseau.webp" alt="SonReseau" class="center">
 
 ## Le script bash de téléchargement
 

@@ -10,7 +10,7 @@ tags: [ "sécurité", "multi os", "outils" ]
 draft: false
 ---
 
-<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden.png" alt="bitwarden" style="zoom:70%;" class="center" />
+<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden.webp" alt="bitwarden" style="zoom:70%;" class="center" />
 
 ## Pourquoi Bitwarden
 
@@ -34,13 +34,13 @@ Notez que l'apparence de l'extension et des applications sont sensiblement ident
 
 Vous devriez retrouver l'extension en haut de votre navigateur (ici sur Firefox)
 
-<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden1.png" alt="Bitwarden Extension" style="zoom:100%;" class="center" />
+<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden1.webp" alt="Bitwarden Extension" style="zoom:100%;" class="center" />
 
 Cliquez dessus et connectez-vous.
 
 Vous devriez arriver dans votre **coffre-fort**. Ici vous trouverez listé tous les sites pour lesquels vous avez enregistré un ou plusieurs mots de passe (1). Vous pouvez en rechercher un (2). Notez que Bitwarden détecte l'URL sur lequel vous vous trouvez et si celle-ci match avec une URL d'un mot de passe présent dans votre coffre, il la met en première (3).
 
-<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden2.png" alt="Bitwarden" style="zoom:50%;" class="center" />
+<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden2.webp" alt="Bitwarden" style="zoom:50%;" class="center" />
 
 Votre coffre à vous devrait être vide. Nous allons voir un peu plus loin comment le remplir.
 
@@ -54,23 +54,23 @@ En bas vous avez 4 onglets. Le premier `Coffre` que l'on vient de voir. Le secon
 
 Bien pratique pour générer un mot de passe sans avoir à réfléchir à sa complexité. Rappelons que l'intérêt d'un gestionnaire est justement de vous décharger de la charge mentale de gérer des mots de passe. Vous n'aurez plus à les retenir ! Vous pouvez donc augmenter drastiquement la complexité de vos mots de passe.
 
-<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden3.png" alt="Bitwarden" style="zoom:50%;" class="center" />
+<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden3.webp" alt="Bitwarden" style="zoom:50%;" class="center" />
 
 Je passe rapidement sur le 3e onglet. Il permet d'envoyer un texte ou un fichier à un tiers de manière chiffré protégé par un mot de passe. Ça peut être bien pratique pour échanger des données sensibles. Nous ne verrons pas cet usage ici mais sachez que ça existe. Son fonctionnement est très simple et permet de limiter le nombre de lectures ou encore de spécifier une date d'expiration.
 
-<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden4.png" alt="Bitwarden" style="zoom:50%;" class="center" />
+<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden4.webp" alt="Bitwarden" style="zoom:50%;" class="center" />
 
 Le dernier onglet permet comme son nom l'indique de gérer les paramètres. Allez y faire un tour, c'est classique. On peut modifier son mot de passe, modifier l'apparence de l'extension avec un thème sombre et un thème clair, gérer la sécurité, etc.
 
 Allez y faire un tour, c'est toujours bon à explorer.
 
-<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden5.png" alt="Bitwarden" style="zoom:50%;" class="center" />
+<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden5.webp" alt="Bitwarden" style="zoom:50%;" class="center" />
 
 ### Paramètres de Sécurité
 
 Un petit mot rapide sur les paramètres de sécurité :
 
-<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden6.png" alt="Bitwarden" style="zoom:50%;" class="center" />
+<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden6.webp" alt="Bitwarden" style="zoom:50%;" class="center" />
 
 Vérifier que le délai d'expiration est bien réglé a minima sûr `Au démarrage du navigateur` . Cela verrouillera votre coffre dès que votre navigateur redémarrera. Vous pouvez également mettre un délai de quelques minutes à quelques heures. Je vous déconseille de cocher `Jamais`. L'intérêt d'un coffre est d'être verrouillé sinon autant écrire vos mots de passe dans un bloc-notes (S’il vous plaît, ne faites pas ça).
 
@@ -89,7 +89,7 @@ Nous allons voir les deux méthodes.
 
 Dans votre coffre cliquez sur `Nouveau` puis `Identifiants`. Notez qu'il est également possible d'enregistrer des CB, des identités ou bien des notes.
 
-<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden7.png" alt="Bitwarden" style="zoom:100%;" class="center" />
+<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden7.webp" alt="Bitwarden" style="zoom:100%;" class="center" />
 
 Commençons par donner un nom à notre identifiant (1), cela permet de le rechercher. Si vous avez plusieurs identifiants pour un même site cela permet de les reconnaître (un compte admin, un compte user par exemple).
 
@@ -99,7 +99,7 @@ Viennent ensuite les identifiants de connexion (3 et 4), un nom d'utilisateur et
 
 Si vous n'êtes pas encore à l'aise à l'idée d'utiliser un gestionnaire de mot de passe, vous pouvez commencer par enregistrer un mot de passe que vous connaissez. Vous pourrez toujours le modifier plus tard en le remplaçant par un mot de passe plus complexe.
 
-<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden8.png" alt="Bitwarden" style="zoom:100%;" class="center" />
+<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden8.webp" alt="Bitwarden" style="zoom:100%;" class="center" />
 
 On retrouve en (6) l'URL de saisie automatique. C'est cette url qui si elle est détectée permettra de remplir les champs de connexion automatiquement. Notez qu'il est possible d'en remplir plusieurs. On trouve ensuite un champ de note (7) pratique pour noter des informations complémentaires sur ce compte que l'on voudrait protéger. Enfin, une case à cocher (8) permet de saisir l'option de demander le mot de passe principal pour cet identifiant spécifiquement. Cela rajoute une couche de sécurité au besoin.
 
@@ -115,7 +115,7 @@ Ce cas est très pratique lorsque vous vous créez un nouveau compte sur un site
 
 Au moment de la saisie du mot de passe, allez sur Bitwarden sur l'onglet Générateur pour en créer un.
 
-<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden9.png" alt="Bitwarden" style="zoom:100%;" class="center" />
+<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden9.webp" alt="Bitwarden" style="zoom:100%;" class="center" />
 
 Choisissez bien Mot de passe (1). Dans les options, réglez la longueur (2). Et là, pas de chichi ! On peut se laisser aller en longueur, ce n'est pas nous qui allons le mémoriser de toute façon !
 
@@ -129,7 +129,7 @@ Il ne vous reste plus qu'à valider la création de votre compte.
 
 Une pop-up devrait apparaître comme ceci :
 
-<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden10.png" alt="Bitwarden" style="zoom:100%;" class="center" />
+<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden10.webp" alt="Bitwarden" style="zoom:100%;" class="center" />
 
 Plusieurs options s'offrent à vous. Vous pouvez choisir de ne jamais enregistrer de mot de passe (1) cela est pratique dans certains cas pour éviter de subir la pop-up quand vous savez que vous ne sauvegarderez jamais votre mot de passe sur un site spécifique.
 
@@ -147,7 +147,7 @@ Maintenant que nous avons enregistré un identifiant nous allons voir comment se
 
 Allez sur la page d'authentification d'un site dont vous avez mémorisé l'identifiant. Cliquez simplement sur un champ du formulaire, l'icône de Bitwarden devrait apparaître et la liste des identifiants enregistrée pour ce site devrait apparaître.
 
-<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden11.png" alt="Bitwarden" style="zoom:100%;" class="center" />
+<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden11.webp" alt="Bitwarden" style="zoom:100%;" class="center" />
 
 Vous n'avez plus qu'à cliquer sur l'identifiant de votre choix pour que le formulaire se remplisse tout seul, magique !
 
@@ -155,13 +155,13 @@ Si la liste n'apparaît pas, cela peut arriver, cette option est encore assez r�
 
 Pour l'activer, allez dans les paramètres, dans `Saisie automatique`.
 
-<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden12.png" alt="Bitwarden" style="zoom:100%;" class="center" />
+<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden12.webp" alt="Bitwarden" style="zoom:100%;" class="center" />
 
 Assurez-vous que l'option `Afficher les suggesions de saisie automatique dans les champs d'un formulaire` soit cochée.
 
 Si vraiment malgré le fait que l'option soit cochée, la liste ne s'affiche pas, on peut remplir le formulaire à l'ancienne :)
 
-<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden13.png" alt="Bitwarden" style="zoom:100%;" class="center" />
+<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden13.webp" alt="Bitwarden" style="zoom:100%;" class="center" />
 
 
 
@@ -181,7 +181,7 @@ Saisissez votre mot de passe actuel (vous pouvez pour cela utilisez la même mé
 
 Générer un mot de passe dans Bitwarden et collez-le dans les champs prévus à cet effet.
 
-<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden14.png" alt="Bitwarden" style="zoom:80%;" class="center" />
+<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden14.webp" alt="Bitwarden" style="zoom:80%;" class="center" />
 
 Validez (dans mon cas, cliquez sur Changer le mot de passe).
 
@@ -189,11 +189,11 @@ Selon les cas, il vous sera proposé de modifier votre mot de passe via une pop-
 
 Rassurez-vous si ce n'est pas le cas, allez dans Bitwarden, et cliquez sur votre identifiant (1).
 
-<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden15.png" alt="Bitwarden" style="zoom:100%;" class="center" />
+<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden15.webp" alt="Bitwarden" style="zoom:100%;" class="center" />
 
 Vous retrouvez alors toutes les infos de votre identifiant. Cliquez sur Modifier. Vous pouvez alors modifier votre mot de passe (en collant celui que vous aviez copié plus tôt).
 
-<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden16.png" alt="Bitwarden" style="zoom:100%;" class="center" />
+<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden16.webp" alt="Bitwarden" style="zoom:100%;" class="center" />
 
 N'oubliez pas d'enregistrer !
 
@@ -207,19 +207,19 @@ Je l'ai moi-même fait il y a quelques années en passant de Keepass à LastPass
 
 C'est très simple. Dans les paramètres de Bitwarden allez dans `Coffre`
 
-<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden17.png" alt="Bitwarden" style="zoom:100%;" class="center" />
+<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden17.webp" alt="Bitwarden" style="zoom:100%;" class="center" />
 
 #### Exporter le coffre
 
 Allez dans `Exporter le coffre`.
 
-<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden18.png" alt="Bitwarden" style="zoom:80%;" class="center" />
+<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden18.webp" alt="Bitwarden" style="zoom:80%;" class="center" />
 
 On vous demande alors de choisir un format de fichier. Vous pouvez le laisser par défaut à moins que vous choisissiez de chiffrer votre coffre. Cela peut être une bonne idée afin de le protéger. En effet, tous vos identifiants, mots de passe et Carte bancaires enregistré seront lisibles dans un simple fichier texte. Ce document est critique.
 
 Choisissez `json (Encrypted)` et cochez `Protégé par un mot de passe` pour utiliser un mot de passe ou `Compte restreint` pour que le coffre soit associé à votre compte Bitwarden.
 
-<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden19.png" alt="Bitwarden" style="zoom:80%;" class="center" />
+<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden19.webp" alt="Bitwarden" style="zoom:80%;" class="center" />
 
 Cliquez sur `Exporter le coffre`.
 
@@ -229,7 +229,7 @@ Encore une fois, faite très attention à comment vous stockez et transmettez ce
 
 Ici vous pourrez ajouter, supprimer ou modifier vos dossiers, importer des mots de passe ou bien exporter votre coffre. Allez dans `Importer des données`.
 
-<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden20.png" alt="Bitwarden" style="zoom:80%;" class="center" />
+<img src="/img/2025-02-05-Gestionnaire-mot-de-passe-partie2/bitwarden20.webp" alt="Bitwarden" style="zoom:80%;" class="center" />
 
 Vous pouvez choisir un dossier spécifique. Choisissez le format de fichier en fonction de l'origine du coffre que vous voulez importer. Choisissez le fichier à importer puis cliquez sur `Importer des données`.
 
