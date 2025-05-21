@@ -1,3 +1,5 @@
+[![CI](https://github.com/victorprouff/blog-hugo/actions/workflows/deploy.yml/badge.svg)](https://github.com/victorprouff/blog-hugo/actions/workflows/deploy.yml)
+
 # Description
 
 Code source de mon [blog](https://blog.victorprouff.fr/) perso.
