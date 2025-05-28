@@ -1,3 +1,4 @@
-+++
-author = "Victor Prouff"
-+++
+---
+title: "Home"
+author: "Victor Prouff"
+---
