@@ -179,9 +179,10 @@ url = "mailto:contact@victorprouff.fr"
 ###################### Outputs
 [outputs]
   home = ['html', 'rss', 'htaccess', 'humanstxt']
-  section = ['html', 'rss']
+  # section = ['html', 'rss']
   taxonomy = ['html', 'rss']
   term = ['html', 'rss']
+  page = ['html', 'rss']
 
 [outputFormats]
   [outputFormats.htaccess]
