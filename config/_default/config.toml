@@ -178,18 +178,17 @@ url = "mailto:contact@victorprouff.fr"
 
 ###################### Outputs
 [outputs]
-  home = ['HTML', 'htaccess', 'humanstxt', 'rss']
+  home = ['html', 'rss', 'htaccess', 'humanstxt']
   section = ['html', 'rss']
   taxonomy = ['html', 'rss']
   term = ['html', 'rss']
 
 [outputFormats]
-[outputFormats.htaccess]
+  [outputFormats.htaccess]
     baseName = ""
     isPlainText = true
     mediaType = "text/htaccess"
-
-[outputFormats.humanstxt]
+  [outputFormats.humanstxt]
     baseName = "humans"
     isPlainText = true
     mediaType = "text/plain"
