@@ -169,6 +169,10 @@ name = "mastodon"
 url = "https://mastodon.social/@victorprouff"
 
 [[params.socialIcons]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/victor-prouff-formateur/"
+
+[[params.socialIcons]]
 name = "Rss"
 url = "/index.xml"
 
@@ -179,7 +183,7 @@ url = "mailto:contact@victorprouff.fr"
 ###################### Outputs
 [outputs]
   home = ['html', 'rss', 'htaccess', 'humanstxt']
-  # section = ['html', 'rss']
+  section = ['html', 'rss']
   taxonomy = ['html', 'rss']
   term = ['html', 'rss']
   page = ['html', 'rss']
@@ -193,6 +197,15 @@ url = "mailto:contact@victorprouff.fr"
     baseName = "humans"
     isPlainText = true
     mediaType = "text/plain"
+  [outputFormats.rss]
+    baseName = "index"
+    mediaType = "application/rss+xml"
+    # rel = "alternate"
+    # isHTML = true
+    isPlainText = false
+    # permalinkable = true
+
+
 
 # Permet de spécifier un type custom ici, htaccess  
 [mediaTypes]
