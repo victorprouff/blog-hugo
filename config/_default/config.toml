@@ -199,13 +199,18 @@ url = "mailto:contact@victorprouff.fr"
     mediaType = "text/plain"
   [outputFormats.rss]
     baseName = "index"
-    mediaType = "application/rss+xml"
-    # rel = "alternate"
-    # isHTML = true
+    isHTML = false
     isPlainText = false
-    # permalinkable = true
-
-
+    mediaType = 'application/rss+xml'
+    noUgly = true
+    notAlternative = false
+    path = ''
+    permalinkable = false
+    protocol = ''
+    rel = 'alternate'
+    root = false
+    ugly = false
+    weight = 0
 
 # Permet de spécifier un type custom ici, htaccess  
 [mediaTypes]
