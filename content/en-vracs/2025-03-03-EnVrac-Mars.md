@@ -18,13 +18,13 @@ Vous pouvez également retrouver [celui du mois dernier](https://blog.victorprou
 N’hésitez pas à réagir en commentaire ou à partager des ressources que vous trouvez pertinentes !
 
 Bonne lecture et visionnage ! ☺️
-### 🎞️ Youtube
+## 🎞️ Youtube
 - [L'humanité peut-elle s'offrir l'IA ?](https://www.youtube.com/watch?v=SAk5U9EHikg)
 - [Pourquoi les criminels achètent ces téléphones 6000$ ?](https://www.youtube.com/watch?v=dS01AoUF1xo&t=1s)
 - [Pourquoi ce scammer me donne de l’argent ?](https://www.youtube.com/watch?v=7revMCR3O4M)
 - [Les sacrifiés de l'IA](https://www.france.tv/documentaires/documentaires-societe/6888928-les-sacrifies-de-l-ia.html#about-section)
 
-### 📖 Articles
+## 📖 Articles
 - [Relocalisation numérique](https://cartes.app/blog/relocalisation-numerique) : Franchement très intéressant. Créons des services numériques Français et européen Open Source pour se sortir de la main mise numérique état unienne
 - [Voir la France en train](https://cartes.app/blog/plan-sncf) : Les cartes proposent une vision centré sur les routes et l'usage de la voiture oubliant complétement les trains et voies ferrés à l'heure des problématiques climatiques où l'on devrait freiner notre usage de la voiture et développer le train
 - [Savez-vous ce qui émet un peu ou beaucoup de CO₂ : prendre l’avion, manger de la viande ou utiliser un sèche-linge pendant un an?](https://www.lemonde.fr/les-decodeurs/article/2025/02/17/savez-vous-ce-qui-emet-un-peu-ou-beaucoup-de-co-prendre-l-avion-manger-de-la-viande-ou-utiliser-un-seche-linge-pendant-un-an_6145983_4355771.html)
@@ -66,7 +66,7 @@ Bonne lecture et visionnage ! ☺️
 - [Nous sommes trop cons - Ou comment la tech bouffe notre cerveau](https://korben.info/sommes-nous-devenus-trop-cons-declin-cognitif-ere-numerique.html)
 - [L’administration Trump envoie par erreur ses plans de guerre à un journaliste via Signal](https://next.ink/177060/ladministration-trump-envoie-par-erreur-ses-plans-de-guerre-a-un-journaliste-via-signal/)
 
-### 🎧 Podcasts
+## 🎧 Podcasts
 - [[L'humeur de Luc Julia] Les IA génératives sont mortes](https://mondenumerique.info/episode/itw-lhumeur-de-luc-julia-les-ia-generatives-que-lon-connait-aujourdhui-sont-mortes) 
 - [Underscore_ - Le cloud français est-il un échec ?](https://open.spotify.com/episode/60IbAqpq2k6bwfvdMSRjVI?si=feda39d38f0f4643)
 - [#LIDD : un podcast sur notre enquête-fleuve GenAI et le modèle éco de Next.ink](https://next.ink/brief_article/lidd-un-podcast-sur-notre-enquete-fleuve-genai-et-le-modele-eco-de-next-ink/)
@@ -74,10 +74,10 @@ Bonne lecture et visionnage ! ☺️
 - [Le coût écologique de l'intelligence artificielle](https://www.radiofrance.fr/franceinter/podcasts/la-terre-au-carre/la-terre-au-carre-du-lundi-10-fevrier-2025-3809708)
 - ["Les sacrifiés de l’IA" : dans son documentaire, Henri Poulain révèle les coulisses d’une industrie qui exploite la misère humaine](https://www.francetvinfo.fr/replay-radio/info-medias/les-sacrifies-de-l-ia-dans-son-documentaire-henri-poulain-revele-les-coulisses-d-une-industrie-qui-exploite-la-misere-humaine_7038260.html)
 
-### 📚 Livres
+## 📚 Livres
 - **Apprendre, si par bonheur - Becky Chambers** : Dans le futur, 4 astronautes font parti d'une mission scientifique et éthique pour explorer 4 exoplanètes. Une réflexion sur ce que devrait être l'exploration spatiale, une vision éthique et altruiste de la recherche de connaissance. «Nous n’avons rien trouvé que vous pourrez vendre. Nous n’avons rien trouvé d’utile. Nous n’avons trouvé aucune planète qu’on puisse coloniser facilement ou sans dilemme moral, si c’est un objectif important. Nous n’avons rien satisfait que la curiosité, rien gagné que du savoir. »
 
-### 🛠️ Tools
+## 🛠️ Tools
 - [BioArt Source - Une mine d'or d'illustrations médicales gratuites](https://korben.info/bioart-source-illustrations-medicales-gratuites.html)
     - [Sources](https://bioart.niaid.nih.gov/)
 - [Créez facilement des raccourcis clavier en images](https://korben.info/generateur-images-raccourcis-clavier.html)

@@ -15,12 +15,12 @@ Vous pouvez également retrouver [celui du mois dernier](https://blog.victorprou
 
 N’hésitez pas à réagir en commentaire ou à partager des ressources que vous trouvez pertinentes !
 
-### 🛠️ Tools
+## 🛠️ Tools
 - [Tauri : une alternative à Electron écrite en Rust permettant de construire des applications pour le bureau](https://rust.developpez.com/actu/312832/Tauri-une-alternative-a-Electron-ecrite-en-Rust-permettant-de-construire-des-applications-pour-le-bureau-a-partir-de-n-importe-quel-framework-frontal-base-sur-HTML-et-JavaScript/)
 - [NeoHtop - Enfin un moniteur système moderne et ultra-rapide](https://korben.info/neohtop-moniteur-systeme-rust-moderne-rapide.html)
 - [Comment bloquer automatiquement les popups de cookies avec Consent-O-Matic](https://korben.info/consent-o-matic-extension-automatisation-popups-cookies.html)
 
-### 📖 Articles
+## 📖 Articles
 - [Firefox 138 propose enfin une vraie gestion des profils ❤️](https://next.ink/182818/firefox-138-propose-enfin-une-vraie-gestion-des-profils/)
 - [Cinq sociétés savantes alertent contre les dangers des écrans avant six ans](https://next.ink/brief_article/cinq-societes-savantes-alertent-contre-les-dangers-des-ecrans-avant-six-ans/)
 - [UN DES PLUS GROS YOUTUBEUR DU MONDE PASSE SOUS LINUX !](https://www.linuxtricks.fr/news/10-logiciels-libres/564-un-des-plus-gros-youtubeur-du-monde-passe-sous-linux/)
@@ -40,12 +40,12 @@ N’hésitez pas à réagir en commentaire ou à partager des ressources que vou
 - [Quand une œuvre d’art peut rendre fou](https://tcrouzet.com/2025/05/20/opalka/)
 - [Le département des Hauts-de-Seine victime d’une cyberattaque « de grande ampleur »](https://next.ink/brief_article/le-departement-des-hauts-de-seine-victime-dune-cyberattaque-de-grande-ampleur/)
 - [Mark Zuckerberg ferme son école pour enfants défavorisés](https://next.ink/brief_article/mark-zuckerberg-ferme-son-ecole-pour-enfants-defavorises/)
-### 📚 Livres
+## 📚 Livres
 - [Du technofascisme au Livre contre-attaque](https://tcrouzet.com/2025/04/23/le-livre-contre-attaque-en-libre/)
-### 🎞️ Youtube
+## 🎞️ Youtube
 - [Comment l’horoscope a élu Donald Trump](https://youtu.be/gCAZusQEr2E?si=AE-MRXMD5G5YI4az)
 - [La mystérieuse salle 641A… qui vous surveille](https://www.youtube.com/watch?v=RXF5sJch378)
 - [Comment Wikipédia résiste ?](https://www.youtube.com/watch?v=K53BoEfUJuU)
 - [Le hacker “éthique” qui a berné tous les médias français (Florent Curtet : Génie ou Escroc](https://www.youtube.com/watch?v=mjxYv19HGrw)
-### 🎧 Podcasts
+## 🎧 Podcasts
 - [Numériques Essentiels 2030 : Politiser la numérisation ?](https://open.spotify.com/episode/4H9s8ThwUrYNOebhVdvPIk?si=46da44725a8c4265) - Que feriez-vous si, demain, les GAFAM n’étaient plus accessibles ?

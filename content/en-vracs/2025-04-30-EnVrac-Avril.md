@@ -17,12 +17,12 @@ N’hésitez pas à réagir en commentaire ou à partager des ressources que vou
 
 Bonne lecture et visionnage ! ☺️
 
-### 🎞️ Vidéos
+## 🎞️ Vidéos
 - [Le nouveau projet révolutionnaire de Jean-Baptiste Kempf](https://www.youtube.com/watch?v=0Vtg245ZDbU)
 - [L'épidémie qui fait perdre la vue.](https://www.youtube.com/watch?v=_YVhFlXH2gI)
 - [L'IA révèle les motifs cachés du loto, ratés de tous 🤯](https://www.youtube.com/watch?v=WOcsdYnjuZM)
 - [Les 24h qui ont changé l'histoire du crime organisé](https://www.youtube.com/watch?v=ag6-52_1SDA)
-### 📖 Articles
+## 📖 Articles
 - [Petite leçon de PAO pour éditeurs et auteurs](https://tcrouzet.com/2017/02/28/petite-lecon-de-pao-pour-editeurs-et-auteurs/) : Quand un dev se met à écrire.
 - [L’école Polytechnique veut migrer sur Microsoft 365 et déclenche un tollé](https://next.ink/176700/lecole-polytechnique-veut-migrer-sur-microsoft-365-et-declenche-un-tolle/)
 - [Mini-jeu : Réduire ma dépendance aux géants américains via le Tech Dependency index](https://eventuallycoding.com/2025/04/score-tech-dependency)
@@ -51,8 +51,8 @@ Bonne lecture et visionnage ! ☺️
 - [Ma petite vie sur Mastodon](https://blogz.zaclys.com/depuis-les-gorces/ma-petite-vie-sur-mastodon)
 - [Travailler moins pour gagner moins](https://blogz.zaclys.com/depuis-les-gorces/travailler-moins-pour-gagner-moins)
 - [Tesla est suspecté de trafiquer le kilométrage de ses voitures électriques](https://www.numerama.com/vroom/1950735-tesla-est-suspecte-de-trafiquer-le-kilometrage-de-ses-voitures-electriques.html)
-### 🎧 Podcasts
+## 🎧 Podcasts
 - [Cybersécurité : protéger vos données dans le futur numérique incertain](https://open.spotify.com/episode/5h3kyWCJsTCo34I0SZXT5d?si=JeZTw2KLTaejlfmMurpgLw)
-### 🛠️ Tools
+## 🛠️ Tools
 - [Sécurisez vos démos de code avec Camouflage, le protecteur de secrets pour VS Code](https://korben.info/securisez-vos-demos-de-code-avec-camouflage-le-protecteur-de-secrets-pour-vs-code.html) 
 - [Euro-Stack : Liste d'alternative européenne au cloud US](https://euro-stack.com/alternatives/) 
