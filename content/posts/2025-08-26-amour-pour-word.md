@@ -1,7 +1,7 @@
 ---
 title: "Amour Pour Word"
-description: ""
-summary: ""
+description: "Amour Pour Word ... ou pas."
+summary: "Amour Pour Word ... ou pas."
 date: 2025-08-26T15:53:06+02:00
 categories: [ "Reflexion" ]
 tags: ["word", "Markdown" ]
