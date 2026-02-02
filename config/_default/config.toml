@@ -178,7 +178,7 @@ url = "/index.xml"
 
 [[params.socialIcons]]
 name = "email"
-url = "mailto:contact@victorprouff.fr"
+url = "mailto:contact-pro@victorprouff.fr"
 
 ###################### Outputs
 [outputs]
