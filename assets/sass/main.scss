@@ -99,7 +99,7 @@ $on-widescreen: 1152px;
     margin-right: auto;
 }
 
-.quote-info {
+.alert-info {
     border-left: 4px solid #3498db;
     border-radius: 5px;
     background-color: #3498db47;
@@ -115,7 +115,7 @@ $on-widescreen: 1152px;
     }
 }
 
-.quote-tip {
+.alert-tip {
     border-left: 4px solid #477e02;
     border-radius: 5px;
     background-color: #477e0247;
@@ -131,7 +131,7 @@ $on-widescreen: 1152px;
     }
 }
 
-.quote-warning {
+.alert-warning {
     border-left: 4px solid #e9973f;
     border-radius: 5px;
     background-color: #e9973f47;
@@ -147,7 +147,7 @@ $on-widescreen: 1152px;
     }
 }
 
-.quote-danger {
+.alert-danger {
     border-left: 4px solid #ed4448;
     border-radius: 5px;
     background-color: #ed444847;

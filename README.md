@@ -96,12 +96,12 @@ et rajouter la class dans le fichier `custom.css`.
 }
 ```
 
-## Améliorer le rendu des quotations
+## Améliorer le rendu des alerts
 
-J'aime bien comment rende les citations sur github ou Obsidian mais malheureusement, ce n'est pas standard en markdown.
+J'aime bien comment rende les alerts sur [github](https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts) ou Obsidian mais malheureusement, ce n'est pas standard en markdown.
 J'ai donc rajouté un peu de css pour avoir un rendu plus sympa 😊
 
-Quand je veux faire une citation (ou plutôt mettre en avant du texte) au lieu de faire comme je faisais avant je fais :
+Quand je veux faire une alert (mettre en avant du texte) au lieu de faire comme je faisais avant je fais :
 
 ```markdown
 > [!info] Ceci est un titre
@@ -113,28 +113,28 @@ Quand je veux faire une citation (ou plutôt mettre en avant du texte) au lieu d
 Je fais :
 
 ```markdown
-<blockquote class="quote-danger">
+<blockquote class="alert-danger">
 <h3>Ceci est un titre</h3>
 Unam incolunt Belgae, aliam Aquitani, tertiam.
 
 Paullum deliquit, ponderibus modulisque suis ratio utitur. Curabitur est gravida et libero vitae dictum.
 </blockquote>
 
-<blockquote class="quote-warning">
+<blockquote class="alert-warning">
 <h3>Ceci est un titre</h3>
 Unam incolunt Belgae, aliam Aquitani, tertiam.
 
 Paullum deliquit, ponderibus modulisque suis ratio utitur. Curabitur est gravida et libero vitae dictum.
 </blockquote>
 
-<blockquote class="quote-tip">
+<blockquote class="alert-tip">
 <h3>Ceci est un titre</h3>
 Unam incolunt Belgae, aliam Aquitani, tertiam.
 
 Paullum deliquit, ponderibus modulisque suis ratio utitur. Curabitur est gravida et libero vitae dictum.
 </blockquote>
 
-<blockquote class="quote-info">
+<blockquote class="alert-info">
 <h3>Ceci est un titre</h3>
 Unam incolunt Belgae, aliam Aquitani, tertiam.
 
@@ -145,7 +145,7 @@ Paullum deliquit, ponderibus modulisque suis ratio utitur. Curabitur est gravida
 Et je rajoute le scss suivant dans `/assets/sass/main.scss` :
 
 ```css
-.quote-info {
+.alert-info {
     border-left: 4px solid #3498db;
     border-radius: 5px;
     background-color: #3498db47;
@@ -161,7 +161,7 @@ Et je rajoute le scss suivant dans `/assets/sass/main.scss` :
     }
 }
 
-.quote-tip {
+.alert-tip {
     border-left: 4px solid #477e02;
     border-radius: 5px;
     background-color: #477e0247;
@@ -177,7 +177,7 @@ Et je rajoute le scss suivant dans `/assets/sass/main.scss` :
     }
 }
 
-.quote-warning {
+.alert-warning {
     border-left: 4px solid #e9973f;
     border-radius: 5px;
     background-color: #e9973f47;
@@ -193,7 +193,7 @@ Et je rajoute le scss suivant dans `/assets/sass/main.scss` :
     }
 }
 
-.quote-danger {
+.alert-danger {
     border-left: 4px solid #ed4448;
     border-radius: 5px;
     background-color: #ed444847;
@@ -210,12 +210,12 @@ Et je rajoute le scss suivant dans `/assets/sass/main.scss` :
 }
 ```
 
-Il y a peut-être moyen de faire plus simple mais je suis une quiche en CSS donc bon, ça fonctionne. Si vous avez mieux, dites-moi ! :)
+Il y a peut-être moyen de faire plus simple mais je suis une quiche en CSS donc bon, ça fonctionne. Si vous avez mieux, dites-moi ! 😊
 
 Et voila le résultat :
 
 
-![Examples quotation](./doc/quotation-examples.webp)
+![Examples alerts](./doc/alerts-examples.webp)
 
 
 ## Sources :
