@@ -98,3 +98,67 @@ $on-widescreen: 1152px;
     margin-left: auto;
     margin-right: auto;
 }
+
+.quote-info {
+    border-left: 4px solid #3498db;
+    border-radius: 5px;
+    background-color: #3498db47;
+    padding-left: 1em;
+    color: black;
+
+    h1, h2, h3, h4 {
+        color: #0969da
+    }
+    
+    h1::before, h2::before, h3::before, h4::before {
+        content: "🖋️ ";
+    }
+}
+
+.quote-tip {
+    border-left: 4px solid #477e02;
+    border-radius: 5px;
+    background-color: #477e0247;
+    padding-left: 1em;
+    color: black;
+
+    h1, h2, h3, h4 {
+        color: #477e02
+    }
+    
+    h1::before, h2::before, h3::before, h4::before {
+        content: "✅ ";
+    }
+}
+
+.quote-warning {
+    border-left: 4px solid #e9973f;
+    border-radius: 5px;
+    background-color: #e9973f47;
+    padding-left: 1em;
+    color: black;
+
+    h1, h2, h3, h4 {
+        color: #e9973f
+    }
+    
+    h1::before, h2::before, h3::before, h4::before {
+        content: "⚠️ ";
+    }
+}
+
+.quote-danger {
+    border-left: 4px solid #ed4448;
+    border-radius: 5px;
+    background-color: #ed444847;
+    padding-left: 1em;
+    color: black;
+
+    h1, h2, h3, h4 {
+        color: #ed4448
+    }
+    
+    h1::before, h2::before, h3::before, h4::before {
+        content: "❌ ";
+    }
+}
