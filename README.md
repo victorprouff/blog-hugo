@@ -99,6 +99,7 @@ et rajouter la class dans le fichier `custom.css`.
 ## Améliorer le rendu des alerts
 
 J'aime bien comment rende les alerts sur [github](https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts) ou Obsidian mais malheureusement, ce n'est pas standard en markdown.
+
 J'ai donc rajouté un peu de css pour avoir un rendu plus sympa 😊
 
 Quand je veux faire une alert (mettre en avant du texte) au lieu de faire comme je faisais avant je fais :
@@ -140,15 +141,23 @@ Unam incolunt Belgae, aliam Aquitani, tertiam.
 
 Paullum deliquit, ponderibus modulisque suis ratio utitur. Curabitur est gravida et libero vitae dictum.
 </blockquote>
+
+> ### Ceci est un titre
+> Unam incolunt Belgae, aliam Aquitani, tertiam.
+> 
+> Paullum deliquit, ponderibus modulisque suis ratio utitur. Curabitur est gravida et libero vitae dictum.
+
 ```
 
-Et je rajoute le scss suivant dans `/assets/sass/main.scss` :
+Je viens de rajouter une valeur par défaut. Vu que dans la majorité des cas, je n'ai besoin que de l'alert `Info`, si je fais une citation classique, c'est l'alert info qui est rendu. Si j'ai besoin d'un cas particulier, je le gère avec les blockquotes.
+
+Et je rajoute le scss custom suivant à la fin de `/assets/sass/main.scss` :
 
 ```css
-.alert-info {
-    border-left: 4px solid #3498db;
+blockquote, .alert-info {
+    border-left: 4px solid #0969da;
     border-radius: 5px;
-    background-color: #3498db47;
+    background-color: #ddf4ff;
     padding-left: 1em;
     color: black;
 
@@ -162,14 +171,14 @@ Et je rajoute le scss suivant dans `/assets/sass/main.scss` :
 }
 
 .alert-tip {
-    border-left: 4px solid #477e02;
+    border-left: 4px solid #1a7f37;
     border-radius: 5px;
-    background-color: #477e0247;
+    background-color: #dafbe1;
     padding-left: 1em;
     color: black;
 
     h1, h2, h3, h4 {
-        color: #477e02
+        color: #1a7f37
     }
     
     h1::before, h2::before, h3::before, h4::before {
@@ -178,14 +187,14 @@ Et je rajoute le scss suivant dans `/assets/sass/main.scss` :
 }
 
 .alert-warning {
-    border-left: 4px solid #e9973f;
+    border-left: 4px solid #9a6700;
     border-radius: 5px;
-    background-color: #e9973f47;
+    background-color: #fff8c5;
     padding-left: 1em;
     color: black;
 
     h1, h2, h3, h4 {
-        color: #e9973f
+        color: #9a6700
     }
     
     h1::before, h2::before, h3::before, h4::before {
@@ -193,15 +202,15 @@ Et je rajoute le scss suivant dans `/assets/sass/main.scss` :
     }
 }
 
-.alert-danger {
-    border-left: 4px solid #ed4448;
+.alert-caution {
+    border-left: 4px solid #cf222e;
     border-radius: 5px;
-    background-color: #ed444847;
+    background-color: #ffebe9;
     padding-left: 1em;
     color: black;
 
     h1, h2, h3, h4 {
-        color: #ed4448
+        color: #cf222e
     }
     
     h1::before, h2::before, h3::before, h4::before {
@@ -210,15 +219,90 @@ Et je rajoute le scss suivant dans `/assets/sass/main.scss` :
 }
 ```
 
+Je copie colle le fichier `_dark.scss` de mon template pour le mettre à coté du fichier `main.scss` . Je rajoute la gestion du thème sombre, à l'intérieur `@mixin dark-mode {`
+
+```css
+@mixin dark-mode {
+
+	[...]
+
+
+  /** Custom Alert Styles **/
+  blockquote, .alert-info {
+      border-left: 4px solid #0969da;
+      border-radius: 5px;
+      background-color: #ddf4ff;
+      padding-left: 1em;
+      color: black;
+
+      h1, h2, h3, h4 {
+          color: #0969da
+      }
+      
+      h1::before, h2::before, h3::before, h4::before {
+          content: "🖋️ ";
+      }
+  }
+
+  .alert-tip {
+      border-left: 4px solid #1a7f37;
+      border-radius: 5px;
+      background-color: #dafbe1;
+      padding-left: 1em;
+      color: black;
+
+      h1, h2, h3, h4 {
+          color: #1a7f37
+      }
+      
+      h1::before, h2::before, h3::before, h4::before {
+          content: "✅ ";
+      }
+  }
+
+  .alert-warning {
+      border-left: 4px solid #9a6700;
+      border-radius: 5px;
+      background-color: #fff8c5;
+      padding-left: 1em;
+      color: black;
+
+      h1, h2, h3, h4 {
+          color: #9a6700
+      }
+      
+      h1::before, h2::before, h3::before, h4::before {
+          content: "⚠️ ";
+      }
+  }
+
+  .alert-caution {
+      border-left: 4px solid #cf222e;
+      border-radius: 5px;
+      background-color: #ffebe9;
+      padding-left: 1em;
+      color: black;
+
+      h1, h2, h3, h4 {
+          color: #cf222e
+      }
+      
+      h1::before, h2::before, h3::before, h4::before {
+          content: "❌ ";
+      }
+  }
+
+}
+[...]
+
+```
+
 Il y a peut-être moyen de faire plus simple mais je suis une quiche en CSS donc bon, ça fonctionne. Si vous avez mieux, dites-moi ! 😊
 
 Et voila le résultat :
 
-
 ![Examples alerts](./doc/alerts-examples.webp)
-
 
 ## Sources :
 
 - https://gohugo.io/getting-started/usage/
-
