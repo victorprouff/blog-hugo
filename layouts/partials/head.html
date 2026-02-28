@@ -23,12 +23,12 @@
     {{- $code_syntax_highlight_css := resources.Get "code-highlight.css" | minify | fingerprint }}
     <link href="{{ $code_syntax_highlight_css.RelPermalink }}" rel="stylesheet">
 
-    {{/* Favicons */}}
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ (resources.Get "icons/apple-touch-icon.png").RelPermalink }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ (resources.Get "icons/favicon-32x32.png").RelPermalink }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ (resources.Get "icons/favicon-16x16.png").RelPermalink }}">
-    <link rel="icon" type="image/png" sizes="256x256" href="{{ (resources.Get "icons/favicon-256x256.png").RelPermalink }}">
-    <link rel="mask-icon" href="{{ (resources.Get "icons/safari-pinned-tab.svg").RelPermalink }}">
+    {{/* Favicons - output to /favicons/ to avoid Apache's built-in /icons/ alias */}}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ (resources.Get "icons/apple-touch-icon.png" | resources.Copy "favicons/apple-touch-icon.png").RelPermalink }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ (resources.Get "icons/favicon-32x32.png" | resources.Copy "favicons/favicon-32x32.png").RelPermalink }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ (resources.Get "icons/favicon-16x16.png" | resources.Copy "favicons/favicon-16x16.png").RelPermalink }}">
+    <link rel="icon" type="image/png" sizes="256x256" href="{{ (resources.Get "icons/favicon-256x256.png" | resources.Copy "favicons/favicon-256x256.png").RelPermalink }}">
+    <link rel="mask-icon" href="{{ (resources.Get "icons/safari-pinned-tab.svg" | resources.Copy "favicons/safari-pinned-tab.svg").RelPermalink }}">
     <link rel="shortcut icon" href="{{ (resources.Get "icons/favicon.ico" | resources.Copy "favicon.ico").RelPermalink }}">
 
     {{- partial "webmanifest.html" . -}}
@@ -37,7 +37,7 @@
     <meta name="theme-color" content="{{ .Site.Params.webmanifest.theme_color | default "#434648" }}">
 
     {{/* SVG favicon for the modern web */}}
-    <link rel="icon" type="image/svg+xml" href="{{ (resources.Get "icons/favicon.svg").RelPermalink }}">
+    <link rel="icon" type="image/svg+xml" href="{{ (resources.Get "icons/favicon.svg" | resources.Copy "favicons/favicon.svg").RelPermalink }}">
 
     {{/* Katex support (enabled on specific pages). See 'helpers/katex.html' for more info. */}}
 
