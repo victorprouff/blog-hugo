@@ -40,7 +40,7 @@ jobs:
     
       - name: SFTP Deploy
         #uses: SamKirkland/FTP-Deploy-Action@3.1.1
-        uses: airvzxf/ftp-deployment-action@latest
+        uses: airvzxf/ftp-deployment-action@v2.9.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           user: ${{ secrets.FTP_USER }}
