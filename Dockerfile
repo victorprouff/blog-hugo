@@ -1,5 +1,5 @@
 # --- Étape 1 : build du site avec l'image officielle Hugo (extended) ---
-FROM ghcr.io/gohugoio/hugo:v0.152.2 AS build
+FROM ghcr.io/gohugoio/hugo:v0.169.0 AS build
 
 ARG THEME_REPO=https://github.com/victorprouff/hugo-blog-awesome
 ARG THEME_REF=main

@@ -19,7 +19,7 @@ title = "Victor Prouff blog"
 baseURL = "https://blog.victorprouff.fr"
 
 # This is what goes in <html lang="">
-languageCode = 'fr-fr'
+locale = 'fr-fr'
 
 # This defines how dates are formatted
 defaultContentLanguage = "fr-fr"
@@ -68,8 +68,8 @@ theme = "hugo-blog-awesome"
 
 ############################## French language ################################
 [Languages.fr-fr]
-  languageName = "french"
-  languageCode = "fr-fr"
+  label = "french"
+  locale = "fr-fr"
   contentDir = "content"
   weight = 1
 
