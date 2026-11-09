@@ -1,0 +1,7 @@
+.git
+.github
+public
+resources/_gen
+themes
+.hugo_build.lock
+**/.DS_Store
